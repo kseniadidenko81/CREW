@@ -92,12 +92,14 @@ h2 {
 h3,
 .h3 {
   font-size: 24px;
+  line-height: 28px;
 }
 
 @media (min-width: 768px) {
   h3,
   .h3 {
     font-size: 32px;
+    line-height: 38px;
   }
 }
 
