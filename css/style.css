@@ -995,7 +995,7 @@ img {
   min-height: 60px;
   font-size: 20px;
   font-weight: 600;
-  border-bottom: 1px solid rgb(73 72 74 / 80%);
+  border-bottom: 1px solid rgb(73 72 74 / 20%);
 }
 .pricing-table .pt-option {
   position: relative;
@@ -1021,13 +1021,13 @@ img {
   min-height: 60px;
   padding: 0 15px;
   font-size: 16px;
-  border-bottom: 1px solid rgb(73 72 74 / 80%);
+  border-bottom: 1px solid rgb(73 72 74 / 20%);
 }
 .pricing-table .pt-option .pt-option-item .pt-item .pt-row:first-child {
   align-items: flex-start;
   text-align: left;
   font-weight: 600;
-  border-right: 1px solid rgb(73 72 74 / 80%);
+  border-right: 1px solid rgb(73 72 74 / 20%);
 }
 
 .pricing-table .pill::after {
