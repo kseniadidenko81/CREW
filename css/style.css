@@ -959,7 +959,6 @@ img {
 
 .gallery-img {
   object-position: center;
-  /* max-height: 470px; */
   object-fit: cover;
   height: 100%;
 }
@@ -968,16 +967,16 @@ img {
 .section-pricing {
   background: linear-gradient(90deg, rgb(4 9 47) -30%, rgb(21 19 198) 100%);
 }
-.pricing__table {
+.pricing-table {
   display: flex;
   flex-direction: column;
   margin: 30px 30px 60px 30px;
   background: #11111163;
 }
-.pricing__table .pt__title {
+.pricing-table .pt-title {
   display: flex;
 }
-.pricing__table .pt__title .pt__title__wrap {
+.pricing-table .pt-title .pt-title-wrap {
   position: relative;
   display: flex;
   flex: 1;
@@ -985,7 +984,7 @@ img {
   font-size: 18px;
   text-align: center;
 }
-.pricing__table .pt__title .pt__title__wrap .pt__row {
+.pricing-table .pt-title .pt-title-wrap .pt-row {
   display: flex;
   width: 25%;
   flex-direction: column;
@@ -996,64 +995,23 @@ img {
   min-height: 60px;
   font-size: 20px;
   font-weight: 600;
+  border-bottom: 1px solid rgb(73 72 74 / 80%);
 }
-.pricing__table .pt__title .pt__title__wrap .pt__row:nth-child(2) {
-  border: 1px solid #0c5adb;
-  border-bottom: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  background-color: rgba(0, 97, 255, 0.15);
-}
-.pricing__table .pt__option {
+.pricing-table .pt-option {
   position: relative;
 }
-
-.pricing__table
-  .pt__option
-  .pt__option__mobile__nav
-  .mobile__nav__btn.swiper-button-disabled {
-  background-color: #c0beb6;
-  pointer-events: none;
-}
-.pricing__table
-  .pt__option
-  .pt__option__mobile__nav
-  .mobile__nav__btn:first-child {
-  position: relative;
-  left: -5px;
-}
-.pricing__table
-  .pt__option
-  .pt__option__mobile__nav
-  .mobile__nav__btn:last-child {
-  position: relative;
-  right: 5px;
-}
-.pricing__table .pt__option .pt__option__mobile__nav .mobile__nav__btn svg {
-  width: 16px;
-  color: #faf7f2;
-}
-.pricing__table .pt__option .pt__option__slider {
-  overflow: visible;
-}
-.pricing__table .pt__option .pt__option__slider .swiper-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 100%;
-}
-.pricing__table .pt__option .pt__option__item {
+.pricing-table .pt-option .pt-option-item {
   width: 100%;
   margin-right: 0;
 }
-.pricing__table .pt__option .pt__option__item .pt__item .pt__item__wrap {
+.pricing-table .pt-option .pt-option-item .pt-item .pt-item-wrap {
   display: flex;
   flex-direction: row;
   font-size: 1.375rem;
   line-height: 1.4;
   position: relative;
 }
-.pricing__table .pt__option .pt__option__item .pt__item .pt__row {
+.pricing-table .pt-option .pt-option-item .pt-item .pt-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1063,50 +1021,29 @@ img {
   min-height: 60px;
   padding: 0 15px;
   font-size: 16px;
-  border-bottom: 1px solid rgba(73, 72, 74, 0.1);
+  border-bottom: 1px solid rgb(73 72 74 / 80%);
 }
-.pricing__table .pt__option .pt__option__item .pt__item .pt__row:first-child {
+.pricing-table .pt-option .pt-option-item .pt-item .pt-row:first-child {
   align-items: flex-start;
   text-align: left;
   font-weight: 600;
+  border-right: 1px solid rgb(73 72 74 / 80%);
 }
-.pricing__table .pt__option .pt__option__item .pt__item .pt__row:nth-child(2) {
-  border-left: 1px solid #0c5adb;
-  border-right: 1px solid #0c5adb;
-  background-color: rgba(0, 97, 255, 0.15);
+
+.pricing-table .pill::after {
+  background-color: #052a67;
 }
-.pricing__table .pt__option .pt__option__item .pt__item.selected .pt__row {
+
+.pricing-table .pill.text-gradient {
+  width: 100%;
+}
+
+.pricing-table .pt-option .pt-option-item .pt-item.selected .pt-row {
   display: inline-flex;
   padding: 20px 15px;
 }
-.pricing__table
-  .pt__option
-  .pt__option__item
-  .pt__item.selected
-  .pt__row:first-child {
+.pricing-table .pt-option .pt-option-item .pt-item.selected .pt-row {
   border-bottom: 0;
-}
-.pricing__table
-  .pt__option
-  .pt__option__item
-  .pt__item.selected
-  .pt__row:nth-child(2) {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom: 1px solid #0c5adb;
-}
-.pricing__table .pt__option .pt__option__item .pt__item.selected a {
-  padding: 15px 30px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 2px;
-  background-color: #0c5adb;
-  transition: 0.25s;
-}
-.pricing__table .pt__option .pt__option__item .pt__item.selected a:hover {
-  background-color: #0c5adb;
 }
 
 @media (max-width: 767px) {
