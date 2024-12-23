@@ -33,7 +33,7 @@
 :root {
   --base-font-family: "Montserrat", sans-serif;
 }
-/*  */
+/* STYLES COMMON */
 body {
   margin: 0;
   padding: 0;
@@ -534,8 +534,7 @@ img {
   max-width: 250px;
 }
 
-/*------ End Header------*/
-/* Chat widget container */
+/* CHAT WIDGET */
 .chat-widget {
   position: fixed;
   bottom: 12px;
@@ -543,7 +542,6 @@ img {
   z-index: 1;
 }
 
-/* Chat button */
 .chat-button {
   border: none;
   width: 60px;
@@ -555,7 +553,6 @@ img {
   border-radius: 2px;
 }
 
-/* Chat box */
 .chat-box {
   display: none;
   position: absolute;
@@ -702,7 +699,7 @@ img {
   border-radius: 2px;
 }
 
-/* Cards Why */
+/* CARDS WHY */
 .section-why {
   background-image: url(../img/techno-animate-bg.jpg);
   background-position: left top;
@@ -741,7 +738,7 @@ img {
   position: relative;
 }
 
-/* Section Our Team */
+/* SECTION OUR TEAM */
 .section-our-team {
   background: linear-gradient(90deg, rgb(4 9 47) -30%, rgb(21 19 198) 100%);
 }
@@ -766,7 +763,7 @@ img {
     13px 13px 0 rgb(255 255 255 / 15%);
 }
 
-/* Section For.... */
+/* SECTION FOR.... */
 
 .item-card {
   background: rgba(0, 0, 0, 0.3);
@@ -809,7 +806,7 @@ img {
   margin-right: 10px;
 }
 
-/* Section Services */
+/* SECTION SERVICES */
 
 .section-services {
   background: linear-gradient(90deg, rgb(4 9 47) -30%, rgb(21 19 198) 100%);
@@ -836,7 +833,7 @@ img {
   margin: 0 10px;
 }
 
-/* Section Slider */
+/* SECTION SLIDER */
 .wrapper-slider {
   position: relative;
   top: 0;
@@ -963,19 +960,22 @@ img {
   height: 100%;
 }
 
-/* PRICING */
+/* SECTION TABLE PRICING */
 .section-pricing {
   background: linear-gradient(90deg, rgb(4 9 47) -30%, rgb(21 19 198) 100%);
 }
+
 .pricing-table {
   display: flex;
   flex-direction: column;
   margin: 30px 30px 60px 30px;
   background: #11111163;
 }
+
 .pricing-table .pt-title {
   display: flex;
 }
+
 .pricing-table .pt-title .pt-title-wrap {
   position: relative;
   display: flex;
@@ -984,6 +984,7 @@ img {
   font-size: 18px;
   text-align: center;
 }
+
 .pricing-table .pt-title .pt-title-wrap .pt-row {
   display: flex;
   width: 25%;
@@ -997,13 +998,16 @@ img {
   font-weight: 600;
   border-bottom: 1px solid rgb(73 72 74 / 20%);
 }
+
 .pricing-table .pt-option {
   position: relative;
 }
+
 .pricing-table .pt-option .pt-option-item {
   width: 100%;
   margin-right: 0;
 }
+
 .pricing-table .pt-option .pt-option-item .pt-item .pt-item-wrap {
   display: flex;
   flex-direction: row;
@@ -1011,6 +1015,7 @@ img {
   line-height: 1.4;
   position: relative;
 }
+
 .pricing-table .pt-option .pt-option-item .pt-item .pt-row {
   display: flex;
   flex-direction: column;
@@ -1023,6 +1028,7 @@ img {
   font-size: 16px;
   border-bottom: 1px solid rgb(73 72 74 / 20%);
 }
+
 .pricing-table .pt-option .pt-option-item .pt-item .pt-row:first-child {
   align-items: flex-start;
   text-align: left;
@@ -1038,11 +1044,12 @@ img {
   width: 100%;
 }
 
-.pricing-table .pt-option .pt-option-item .pt-item.selected .pt-row {
+.pricing-table .pt-option .pt-option-item .selected .pt-row {
   display: inline-flex;
   padding: 20px 15px;
 }
-.pricing-table .pt-option .pt-option-item .pt-item.selected .pt-row {
+
+.pricing-table .pt-option .pt-option-item .selected .pt-row {
   border-bottom: 0;
 }
 
@@ -1052,7 +1059,7 @@ img {
   }
 }
 
-/* Card Picing */
+/* SECTION PRICING CARD */
 
 .section-pricing-card article {
   overflow: hidden;
@@ -1186,7 +1193,7 @@ img {
   -webkit-text-fill-color: white;
 }
 
-/* TIMELINE */
+/* SECTION TIMELINE */
 .timeline {
   width: 100%;
 }
@@ -1244,7 +1251,7 @@ img {
   font-size: 22px;
 }
 
-/* CONTACT */
+/* SECTION CONTACT */
 .item-container {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -1352,7 +1359,7 @@ input::-webkit-input-placeholder {
   gap: 24px;
 }
 
-/* Back to top */
+/* BACK TO TOP */
 .back-to-top-btn {
   position: fixed;
   bottom: 12px;
@@ -1383,6 +1390,8 @@ input::-webkit-input-placeholder {
 .typing-text + .typing-text {
   margin-top: -3%;
 }
+
+/* ANIMATION */
 
 .animate {
   animation-name: animate-fade;
@@ -1434,7 +1443,7 @@ input::-webkit-input-placeholder {
   animation-duration: 2.5s;
 }
 
-/* CITATE */
+/* SECTION CITATE */
 .container-author {
   border: 1px solid #201e1e;
   box-shadow: 8px 8px #08080852;
@@ -1456,7 +1465,7 @@ input::-webkit-input-placeholder {
   text-align: right;
 }
 
-.autor-img-citate {
+.author-img-citate {
   max-width: 20%;
   margin-left: auto;
 }
