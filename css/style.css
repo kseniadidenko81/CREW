@@ -173,7 +173,7 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: 1px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1292,6 +1292,14 @@ input::-webkit-input-placeholder {
 
 .text-end button {
   border-radius: 2px;
+}
+
+textarea.form-control {
+  resize: none;
+  overflow: hidden;
+  min-height: 38px;
+  max-height: 200px;
+  line-height: 1.7;
 }
 
 /* CARDS */
