@@ -131,12 +131,14 @@ h5,
 h6,
 .h6 {
   font-size: 22px;
+  line-height: 32px;
 }
 
 @media (min-width: 768px) {
   h6,
   .h6 {
     font-size: 26px;
+    line-height: 36px;
   }
 }
 
