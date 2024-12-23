@@ -106,12 +106,13 @@ h3,
 h4,
 .h4 {
   font-size: 22px;
+  line-height: 28px;
 }
 
 @media (min-width: 768px) {
   h4,
   h4 {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -159,6 +160,7 @@ p + p {
 
 .sub-text {
   font-size: x-large;
+  line-height: 32px;
 }
 
 b,
