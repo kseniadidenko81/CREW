@@ -2022,24 +2022,18 @@
                   />
                 </div>
                 <div class="input-group mb-3">
-                  <span class="bg-block input-group-addon p-2"
-                    ><i class="fa fa-comments" aria-hidden="true"></i
-                  ></span>
-                  <input
-                    type="message"
+                  <span class="bg-block input-group-addon p-2">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                  </span>
+                  <textarea
+                    id="message"
                     name="message"
+                    rows="1"
                     class="input form-control bg-block text-white"
                     placeholder="Про що будемо говорити?"
                     required
-                  />
+                  ></textarea>
                 </div>
-                <!-- <textarea
-                  rows="6"
-                  name="message"
-                  class="input form-control bg-block text-white mb-3"
-                  placeholder="Про що будемо говорити"
-                  required
-                ></textarea> -->
                 <div class="text-end">
                   <button type="submit" class="btn btn-primary">
                     <span>Почати розмову</span>
@@ -2084,6 +2078,20 @@
         once: true,
         offset: 200,
       });
+    </script>
+
+    <script>
+      const textarea = document.getElementById("message");
+
+      // Функция для динамического изменения высоты
+      function autoResize() {
+        this.style.height = "auto"; // Сбрасываем высоту перед расчетом
+        this.style.height = this.scrollHeight + "px"; // Устанавливаем высоту по содержимому
+      }
+
+      // Добавляем обработчики событий
+      textarea.addEventListener("input", autoResize);
+      textarea.addEventListener("focus", autoResize); // Срабатывает при фокусе
     </script>
   </body>
 </html>
