@@ -272,39 +272,3 @@ $(function () {
     $("html, body").animate({ scrollTop: 0 }, "smooth");
   });
 });
-
-// Type Text
-function typeText(element, text, speed = 80) {
-  let index = 0;
-
-  function type() {
-    if (index < text.length) {
-      element.textContent += text.charAt(index);
-      index++;
-      setTimeout(type, speed);
-    }
-  }
-
-  type();
-}
-
-function isVisible(el) {
-  const rect = el.getBoundingClientRect();
-  return rect.top < window.innerHeight && rect.bottom >= 0;
-}
-
-function handleScroll() {
-  const elements = document.querySelectorAll(".typing-text");
-
-  elements.forEach((el) => {
-    if (isVisible(el) && !el.dataset.typed) {
-      el.dataset.typed = "true";
-      const text = el.textContent.trim();
-      el.textContent = "";
-      typeText(el, text);
-    }
-  });
-}
-
-window.addEventListener("scroll", handleScroll);
-window.addEventListener("load", handleScroll);
