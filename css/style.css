@@ -1301,7 +1301,7 @@ img.icon-info {
   content: "";
   position: absolute;
   top: 50%;
-  width: 32%;
+  width: 30%;
   height: 2px;
   background: linear-gradient(to left, #108891, #00005c);
   transform: translateY(-50%);
@@ -1319,7 +1319,7 @@ img.icon-info {
 @media (min-width: 992px) {
   .hr-with-text::before,
   .hr-with-text::after {
-    width: 43%;
+    width: 42%;
     height: 3px;
   }
 }
