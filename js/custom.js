@@ -52,109 +52,52 @@ window.addEventListener("scroll", function () {
 });
 
 // SLIDER
-$(".wrapper-slider ").each(function () {
-  var $slider = $(this);
-  var numberOfSlides = $slider.find(".panel").length;
+let nextButton = document.getElementById("next");
+let prevButton = document.getElementById("prev");
+let list = [].slice.call(document.querySelector(".slider-container").children);
 
-  $slider.find(".panel:eq(0)").addClass("_active");
-  $slider.find(".nav-dot:eq(0)").addClass("active");
-
-  var $activeSlide = $slider.find(".panel._active");
-  var $nextBtn = $slider.find(".next-btn");
-  var $prevBtn = $slider.find(".prev-btn");
-
-  $(".nav-dot").on("click", function () {
-    var slideToGo = $(this).data("slide");
-    goToSlide(slideToGo);
+function findActiveList() {
+  let activeList = list.findIndex((e) => {
+    return e.classList.contains("active");
   });
 
-  $slider.on("slide.changed", function () {
-    console.log("slide changed !");
-    $(".nav-dot").removeClass("active");
-    var $activeDot = $(
-      '.nav-dot[data-slide="' + $(".panel._active").data("slide") + '"]'
-    );
-    console.log();
-    $activeDot.addClass("active");
+  list[activeList].classList.remove(
+    "active",
+    "fadeInRight",
+    "fadeInLext",
+    "animated"
+  );
+
+  return activeList;
+}
+
+function slideShow() {
+  let activeList = findActiveList();
+
+  activeList++;
+  activeList = activeList === list.length ? 0 : activeList;
+
+  list[activeList].classList.add("active", "fadeInRight", "animated");
+}
+
+nextButton.addEventListener("click", slideShow);
+
+prevButton.addEventListener("click", () => {
+  let activeList = findActiveList();
+
+  activeList--;
+  activeList = activeList === -1 ? list.length - 1 : activeList;
+
+  list[activeList].classList.add("active", "fadeInLeft", "animated");
+});
+
+const buttons = document.querySelectorAll(".button img");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
   });
-
-  $nextBtn.on("click", function (event) {
-    nextSlide();
-  });
-
-  $prevBtn.on("click", function (event) {
-    prevSlide();
-  });
-
-  function nextSlide() {
-    $activeSlide = $slider.find(".panel._active");
-    var $nextSlide = $activeSlide.next(".panel");
-    $activeSlide.removeClass("_active");
-    $nextSlide.addClass("_active");
-
-    //$activeSlide = $nextSlide;
-
-    var slideIndex = $slider.find(".panel._active").index(".panel");
-    console.log(slideIndex);
-
-    if (slideIndex >= numberOfSlides || slideIndex <= -1) {
-      firstSlide();
-      $slider.trigger("slide.changed");
-    } else {
-      $slider.trigger("slide.changed");
-    }
-  }
-
-  function prevSlide() {
-    $activeSlide = $slider.find(".panel._active");
-
-    var $prevSlide = $activeSlide.prev(".panel");
-
-    $activeSlide.removeClass("_active");
-    $prevSlide.addClass("_active");
-
-    var slideIndex = $slider.find(".panel._active").index();
-    console.log(slideIndex);
-
-    if (
-      typeof $prevSlide === "undefined" ||
-      $prevSlide === null ||
-      $prevSlide.length == -1 ||
-      slideIndex <= -1
-    ) {
-      lastSlide();
-      $slider.trigger("slide.changed");
-    } else {
-      $slider.trigger("slide.changed");
-    }
-  }
-
-  function firstSlide() {
-    $(".panel._active").removeClass("_active");
-    $slider.find(".panel:eq(0)").addClass("_active");
-    $activeSlide = $slider.find(".panel:eq(0)");
-  }
-
-  function lastSlide() {
-    $(".panel._active").removeClass("_active");
-    $slider
-      .find(".panel")
-      .eq(numberOfSlides - 1)
-      .addClass("_active");
-  }
-
-  function goToSlide(slideToGo) {
-    $(".panel._active").removeClass("_active");
-    $slider
-      .find(".panel")
-      .eq(slideToGo - 1)
-      .addClass("_active");
-    $activeSlide = $slider
-      .find(".panel")
-      .eq(slideToGo - 1)
-      .addClass("_active");
-    $slider.trigger("slide.changed");
-  }
 });
 
 // CHAT-WIDGET
@@ -243,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Input
+// INPUT
 document.getElementById("phone").addEventListener("input", function (e) {
   var x = e.target.value
     .replace(/\D/g, "")
@@ -272,39 +215,3 @@ $(function () {
     $("html, body").animate({ scrollTop: 0 }, "smooth");
   });
 });
-
-// Type Text
-function typeText(element, text, speed = 80) {
-  let index = 0;
-
-  function type() {
-    if (index < text.length) {
-      element.textContent += text.charAt(index);
-      index++;
-      setTimeout(type, speed);
-    }
-  }
-
-  type();
-}
-
-function isVisible(el) {
-  const rect = el.getBoundingClientRect();
-  return rect.top < window.innerHeight && rect.bottom >= 0;
-}
-
-function handleScroll() {
-  const elements = document.querySelectorAll(".typing-text");
-
-  elements.forEach((el) => {
-    if (isVisible(el) && !el.dataset.typed) {
-      el.dataset.typed = "true";
-      const text = el.textContent.trim();
-      el.textContent = "";
-      typeText(el, text);
-    }
-  });
-}
-
-window.addEventListener("scroll", handleScroll);
-window.addEventListener("load", handleScroll);

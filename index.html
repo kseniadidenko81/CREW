@@ -22,31 +22,40 @@
     />
 
     <link
-      href="fonts/montserrat/montserrat-regular.woff2"
+      rel="preload"
+      href="fonts/inter/Inter-Regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
-      href="fonts/montserrat/montserrat-500.woff2"
+      rel="preload"
+      href="fonts/inter/Inter-Medium.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
-      href="fonts/montserrat/montserrat-600.woff2"
+      rel="preload"
+      href="fonts/inter/Inter-SemiBold.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
-      href="fonts/montserrat/montserrat-700.woff2"
+      rel="preload"
+      href="fonts/inter/Inter-Bold.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
-
-    <link href="img/main-bg.png" as="image" />
+    <link
+      rel="preload"
+      href="fonts/inter/Inter-ExtraBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
     <link rel="icon" href="#" type="image/x-icon" />
     <link rel="stylesheet" href="css/aos.css" />
@@ -69,55 +78,50 @@
               <a class="text-decoration-none" href="#"
                 ><span class="logo-text text-decoration-none">CREW</span></a
               >
-              <!-- <a href="#"><img src="https://i.ibb.co/QDy827D/ak-logo.png" /></a> -->
             </div>
 
             <div class="navbar-right nav_menu">
               <div id="mySidenav" class="sidenav">
                 <div class="bg-menu container">
                   <div class="p-2 p-md-4 bg-menu-sub">
+                    <a class="text-decoration-none" href="#"
+                      ><span class="logo-text text-decoration-none"
+                        >CREW</span
+                      ></a
+                    >
                     <a
                       href="javascript:void(0)"
                       class="closebtn"
                       onclick="closeNav()"
                       >&times;</a
                     >
-                    <a href="#digital" onclick="navigateAndClose(event)"
-                      >Digital послуги <span>»</span></a
-                    >
-                    <a href="#why" onclick="navigateAndClose(event)"
-                      >Послуги маркетингу <span>»</span></a
-                    >
-                    <a href="#about" onclick="navigateAndClose(event)"
-                      >Підписка <span>»</span></a
-                    >
-                    <a href="#team" onclick="navigateAndClose(event)"
-                      >Інформація <span>»</span></a
-                    >
-                    <a href="#info" onclick="navigateAndClose(event)"
-                      >Про команду <span>»</span></a
-                    >
-                    <a href="#citate" onclick="navigateAndClose(event)"
-                      >Пропозиції <span>»</span></a
-                    >
-                    <a href="#services" onclick="navigateAndClose(event)"
-                      >Послуги <span>»</span></a
-                    >
-                    <a href="#slider" onclick="navigateAndClose(event)"
-                      >Галерея <span>»</span></a
-                    >
-                    <a href="#pricing" onclick="navigateAndClose(event)"
-                      >Тарифи <span>»</span></a
-                    >
-                    <a href="#pricingTable" onclick="navigateAndClose(event)"
-                      >Порівняння тарифів <span>»</span></a
-                    >
-                    <a href="#timeline" onclick="navigateAndClose(event)"
-                      >Послуги компанії <span>»</span></a
-                    >
-                    <a href="#contact" onclick="navigateAndClose(event)"
-                      >Контакти <span>»</span></a
-                    >
+                    <div class="mt-40">
+                      <a href="#why" onclick="navigateAndClose(event)"
+                        >Чому підписка
+                      </a>
+                      <a href="#about" onclick="navigateAndClose(event)"
+                        >Команда
+                      </a>
+                      <a href="#info" onclick="navigateAndClose(event)"
+                        >Пропозиції
+                      </a>
+                      <a href="#services" onclick="navigateAndClose(event)"
+                        >Послуги
+                      </a>
+                      <a href="#slider" onclick="navigateAndClose(event)"
+                        >Кейси
+                      </a>
+                      <a href="#pricing" onclick="navigateAndClose(event)"
+                        >Тарифи
+                      </a>
+                      <a href="#timeline" onclick="navigateAndClose(event)"
+                        >Процес
+                      </a>
+                      <a href="#contact" onclick="navigateAndClose(event)"
+                        >Контакти
+                        <!-- <span>»</span> -->
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -136,26 +140,30 @@
             </div>
           </div>
         </div>
-        <!-- <span class="bubble-speech animate2 element2 fade-in">
-          Всі ваші потреби з маркетингу в
-          <span class="color-text">одній</span> щомісячній підписці
-        </span> -->
         <div class="main-content">
-          <div class="circle circle1 position-relative animate element3">
-            <span class="bubble-speech animate2 element2 fade-in">
-              Всі ваші потреби з маркетингу в
-              <span class="color-text">одній</span> щомісячній підписці
-            </span>
-            <div class="circle circle2 animate element2">
-              <div class="circle circle3 d-flex flex-column animate element1">
-                <h1 class="h6">
-                  <span class="d-block">віддалена</span
-                  ><span>маркетинг команда</span>
-                </h1>
-                <p class="p-1">Ефективне рішення для e-com бізнесу</p>
+          <div class="auto-height">
+            <div class="circle circle1 position-relative animate element3">
+              <span class="bubble-speech pre-text animate2 element2 fade-in">
+                Всі ваші потреби з маркетингу в
+                <span class="color-text">одній</span> щомісячній підписці
+              </span>
+              <div class="circle circle2 animate element2">
+                <div class="circle circle3 d-flex flex-column animate element1">
+                  <div class="slogan-text">
+                    <h1>
+                      <span class="d-block">Віддалена</span
+                      ><span>маркетинг команда -</span>
+                    </h1>
+                    <p class="h4 p-1">
+                      <span>ефективне рішення для</span>
+                      <span>e-commerce бізнесу</span>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div class="mob-main-img"></div>
         </div>
         <div class="chat-widget animate element2">
           <button class="chat-button">
@@ -245,20 +253,27 @@
       </div>
     </header>
 
-    <section id="digital" class="section-digital section-bg py-4 py-md-5">
+    <section class="section-digital section-bg-light">
       <div class="container">
-        <h2 class="text-center typing-text">Наші послуги digital-маркетингу</h2>
-        <div class="cards cards-w cards-why">
+        <h2
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="900"
+          class="text-center"
+        >
+          Наші послуги digital-маркетингу
+        </h2>
+        <div class="cards cards-w">
           <div
             data-aos="zoom-in-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            class="card p-4"
+            class="card p-32"
           >
-            <div class="p-relative">
-              <div class="h3">одна доба</div>
-              <div class="h4">на запуск</div>
-              <p class="pt-2">
+            <div class="content-card-w">
+              <div class="extrafs pb-4">1 доба</div>
+              <div class="h4 pb-28">на запуск</div>
+              <p>
                 Вже через добу у вашому маркетингу почне відбуватись щось нове і
                 корисне для вашого бізнесу
               </p>
@@ -268,57 +283,51 @@
             data-aos="zoom-in"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            class="card p-4"
+            class="card p-32"
           >
-            <div class="p-relative">
-              <div class="h3">100%</div>
-              <div class="h4">націленість на ROI</div>
-              <p class="pt-2">
-                Data driven підхід, який дозволяє вам отримувати прибуток та
-                досягати своїх фінансових цілей
-              </p>
-            </div>
+            <div class="extrafs pb-4">100%</div>
+            <div class="h4 pb-28">націленість на ROI</div>
+            <p>
+              Data driven підхід, який дозволяє вам отримувати прибуток та
+              досягати своїх фінансових цілей
+            </p>
           </div>
           <div
             data-aos="zoom-in-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            class="card p-4"
+            class="card p-32"
           >
-            <div class="p-relative">
-              <div class="h3">х2</div>
-              <div class="h4">зростання</div>
-              <p class="pt-2">
-                Ми орієнтовані на кратне зростання вашого бізнесу і будемо
-                застосовувати всі необхідні підходи і інструменти
-              </p>
-            </div>
+            <div class="extrafs pb-4">х2</div>
+            <div class="h4 pb-28">зростання</div>
+            <p>
+              Ми орієнтовані на кратне зростання вашого бізнесу і будемо
+              застосовувати всі необхідні підходи і інструменти
+            </p>
           </div>
           <div
             data-aos="zoom-in-right"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            class="card p-4"
+            class="card p-32"
           >
-            <div class="p-relative">
-              <div class="h3">30+</div>
-              <div class="h4">доступні послуги</div>
-              <p class="pt-2">
-                Всі необхідні маркетингові послуги для вашого e-com бізнесу в
-                одному містці
-              </p>
-            </div>
+            <div class="extrafs pb-4">30+</div>
+            <div class="h4 pb-28">доступні послуги</div>
+            <p>
+              Всі необхідні маркетингові послуги для вашого e-com бізнесу в
+              одному містці
+            </p>
           </div>
           <div
             data-aos="zoom-in-left"
             data-aos-offset="300"
             data-aos-easing="ease-in-sine"
-            class="card p-4"
+            class="card p-32"
           >
-            <div class="p-relative">
-              <div class="h3">$4000</div>
-              <div class="h4">економія</div>
-              <p class="pt-2">
+            <div class="content-card-w">
+              <div class="extrafs pb-4">$4000</div>
+              <div class="h4 pb-28">економія</div>
+              <p>
                 Порівняно з inhouse командою, яка виконуватиме такі ж самі
                 задачі
               </p>
@@ -328,13 +337,18 @@
       </div>
     </section>
 
-    <section id="why" class="section-bg section-why py-4 py-md-5">
+    <section id="why" class="section-bg-light section-why">
       <div class="container">
-        <h2 class="text-center typing-text">Чому підписка?</h2>
-        <h2 class="text-center typing-text">
-          А не відділ, послуга, фріланс...
+        <h2
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="900"
+          class="text-center"
+        >
+          <div>Чому підписка?</div>
+          <div>А не відділ, послуга, фріланс...</div>
         </h2>
-        <div class="cards cards-why">
+        <div class="cards cards-why-on">
           <div
             data-aos="zoom-in-right"
             data-aos-offset="300"
@@ -345,18 +359,14 @@
               data-src="img/plusicon-5.svg"
               alt="icon"
               src="img/plusicon-5.svg"
-              class="pb-3 lazyloaded"
+              class="lazyloaded mb-20"
             />
-            <div class="p-relative">
-              <div class="h4">
-                Сплачуйте не за години, а за необмежений доступ
-              </div>
-              <p class="pt-2">
-                Один день - це все, що потрібно, щоб втілити ваші маркетингові
-                плани в життя. Просто опублікуйте завдання, зв'яжіться з
-                фахівцем з маркетингу та запустіть його протягом 24 годин.
-              </p>
-            </div>
+            <h3 class="h4">Сплачуйте не за години, а за необмежений доступ</h3>
+            <p class="pt-12">
+              Один день - це все, що потрібно, щоб втілити ваші маркетингові
+              плани в життя. Просто опублікуйте завдання, зв'яжіться з фахівцем
+              з маркетингу та запустіть його протягом 24 годин.
+            </p>
           </div>
           <div
             data-aos="zoom-in"
@@ -368,19 +378,15 @@
               data-src="img/plusicon-6.svg"
               alt="icon"
               src="img/plusicon-6.svg"
-              class="pb-3 lazyloaded"
+              class="lazyloaded mb-20"
             />
-            <div class="p-relative">
-              <div class="h4">
-                Не витрачайте кошти на онбордінг та рекрутинг
-              </div>
-              <p class="pt-2">
-                Забудьте про величезні гонорари традиційних агентств і високі
-                витрати на власні команди. Щомісячна підписка «все в одному» від
-                NinjaPromo означає, що ви платите лише за те, що вам потрібно,
-                без жодних прихованих платежів.
-              </p>
-            </div>
+            <h3 class="h4">Не витрачайте кошти на онбордінг та рекрутинг</h3>
+            <p class="pt-12">
+              Забудьте про величезні гонорари традиційних агентств і високі
+              витрати на власні команди. Щомісячна підписка «все в одному» від
+              NinjaPromo означає, що ви платите лише за те, що вам потрібно, без
+              жодних прихованих платежів.
+            </p>
           </div>
           <div
             data-aos="zoom-in-left"
@@ -392,16 +398,14 @@
               data-src="img/plusicon-1.svg"
               alt="icon"
               src="img/plusicon-1.svg"
-              class="pb-3 lazyloaded"
+              class="lazyloaded mb-20"
             />
-            <div class="p-relative">
-              <div class="h4">Швидкий старт</div>
-              <p class="pt-2">
-                Один день - це все, що потрібно, щоб втілити ваші маркетингові
-                плани в життя. Просто опублікуйте завдання, зв'яжіться з
-                фахівцем з маркетингу та запустіть його протягом 24 годин.
-              </p>
-            </div>
+            <h3 class="h4">Швидкий старт</h3>
+            <p class="pt-12">
+              Один день - це все, що потрібно, щоб втілити ваші маркетингові
+              плани в життя. Просто опублікуйте завдання, зв'яжіться з фахівцем
+              з маркетингу та запустіть його протягом 24 годин.
+            </p>
           </div>
           <div
             data-aos="zoom-in-right"
@@ -413,16 +417,14 @@
               data-src="img/plusicon-2.svg"
               alt="icon"
               src="img/plusicon-2.svg"
-              class="pb-3 lazyloaded"
+              class="lazyloaded mb-20"
             />
-            <div class="p-relative">
-              <div class="h4">Принцип єдиного вікна</div>
-              <p class="pt-2">
-                Втомилися жонглювати кількома фрілансерами або агентствами для
-                різних маркетингових послуг? Наш сервіс «все в одному» пропонує
-                все: від розробки та дизайну до створення контенту та реклами.
-              </p>
-            </div>
+            <h3 class="h4">Принцип єдиного вікна</h3>
+            <p class="pt-12">
+              Втомилися жонглювати кількома фрілансерами або агентствами для
+              різних маркетингових послуг? Наш сервіс «все в одному» пропонує
+              все: від розробки та дизайну до створення контенту та реклами.
+            </p>
           </div>
           <div
             data-aos="zoom-in"
@@ -434,16 +436,14 @@
               data-src="img/plusicon-3.svg"
               alt="icon"
               src="img/plusicon-3.svg"
-              class="pb-3 lazyloaded"
+              class="lazyloaded mb-20"
             />
-            <div class="p-relative">
-              <div class="h4">Доступ до спеціалістів рівня Сіньйор</div>
-              <p class="pt-2">
-                Не завжди легко знайти та найняти потрібного фахівця, коли ваш
-                бюджет або місцезнаходження обмежує ваші можливості. Забезпечити
-                вас необхідною командою - наш клопіт.
-              </p>
-            </div>
+            <h3 class="h4">Доступ до спеціалістів рівня Сіньйор</h3>
+            <p class="pt-12">
+              Не завжди легко знайти та найняти потрібного фахівця, коли ваш
+              бюджет або місцезнаходження обмежує ваші можливості. Забезпечити
+              вас необхідною командою - наш клопіт.
+            </p>
           </div>
           <div
             data-aos="zoom-in-left"
@@ -455,55 +455,51 @@
               data-src="img/plusicon-4.svg"
               alt="icon"
               src="img/plusicon-4.svg"
-              class="pb-3 lazyloaded"
+              class="lazyloaded mb-20"
             />
-            <div class="p-relative">
-              <div class="h4">
-                Керуйте бюджетом у відповідності до власних потреб
-              </div>
-              <p class="pt-2">
-                Незалежно від того, чи потрібно вам нарощувати маркетингові
-                зусилля під час напруженого сезону, чи зменшувати їх у менш
-                активні часи, ви можете вільно коригувати свій план, коли вам це
-                потрібно.
-              </p>
-            </div>
+            <h3 class="h4">
+              Керуйте бюджетом у відповідності до власних потреб
+            </h3>
+            <p class="pt-12">
+              Незалежно від того, чи потрібно вам нарощувати маркетингові
+              зусилля під час напруженого сезону, чи зменшувати їх у менш
+              активні часи, ви можете вільно коригувати свій план, коли вам це
+              потрібно.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section-bg py-4 py-md-5">
+    <section id="about" class="section-bg-dark section-our-team py-60">
       <div class="container">
-        <div class="row">
+        <div class="row plus-padding">
           <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="col-md-9 m-auto"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1200"
+            class="col-md-10 m-auto"
           >
-            <h2 class="text-centertyping-text mb-4">Про нашу CREW</h2>
-            <h3 class="mb-3">Ваші парнтнери в маркетингових рішеннях</h3>
-            <p>
+            <h2>Про нашу CREW</h2>
+            <h3 class="mb-20 colorText">
+              Ваші партнери в маркетингових рішеннях
+            </h3>
+            <p class="pre-text">
               Ми - команда професіоналів, об'єднаних певною метою: створювати
               маркетинг, який працює на результат. За нашими плечима -
               реалізація численних успішних проєктів у різних сферах бізнесу.
               Завдяки віддаленій формі роботи ми завжди залишаємося гнучкими й
               доступними, незалежно від вашої локації чи часових поясів.
             </p>
-            <p>
+            <p class="pre-text">
               Наша CREW може стати вашим надійним партнером у маркетингу - як
               доповнення до існуючої команди або як повноцінний віддалений
               відділ маркетингу.
             </p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="team" class="section-bg section-our-team py-4 py-md-5">
-      <div class="container">
-        <div class="row">
+        <div class="row plus-padding">
           <div
             data-aos="fade-right"
             data-aos-offset="300"
@@ -512,7 +508,7 @@
           >
             <img
               class="about-me lazyloaded"
-              alt="autor"
+              alt="author"
               data-src="img/Yuri-Iv-bw.jpg"
               src="img/Yuri-Iv-bw.jpg"
             />
@@ -523,9 +519,11 @@
             data-aos-easing="ease-in-sine"
             class="col-lg-6"
           >
-            <div class="block-about-me p-4">
-              <h2>Юрій Іванов</h2>
-              <p class="h4">Спеціаліст з маркетингу та E-COM, GROWTH HACKER</p>
+            <div class="block-about-me p-60">
+              <h2 class="mb-8">Юрій Іванов</h2>
+              <div class="sub-text-section text-white mb-24">
+                Спеціаліст з маркетингу та E-COM, GROWTH HACKER
+              </div>
               <p>
                 Досвід у маркетингу та e-commerce з 2007 року. Робота як з
                 фізичним товарами так і цифровими продуктами.
@@ -539,8 +537,8 @@
                 Новій пошті. Разом з крутою командою перезапускали ПОШТОМАТИ.
               </p>
               <p>Зібрав CREW у 2022 році.</p>
-              <div class="block-teams pt-5">
-                <figure class="item-team text-center">
+              <div class="block-teams">
+                <figure class="item-team">
                   <img
                     width="90"
                     height="90"
@@ -549,13 +547,13 @@
                     data-src="img/testi3.jpg"
                     class="lazyloaded"
                   />
-                  <figcaption class="text-center">
-                    <span class="d-block">Максим</span>
+                  <figcaption>
+                    <div class="text-white">Максим Петров</div>
 
-                    <span>Program Manager</span>
+                    <p>Program Manager</p>
                   </figcaption>
                 </figure>
-                <figure class="item-team text-center">
+                <figure class="item-team">
                   <img
                     width="90"
                     height="90"
@@ -564,12 +562,12 @@
                     data-src="img/testi3.jpg"
                     class="lazyloaded"
                   />
-                  <figcaption class="text-center">
-                    <span class="d-block">Олександра </span>
-                    <span>Creative Director</span>
+                  <figcaption>
+                    <div class="text-white">Олександра Олександрова</div>
+                    <p>Creative Director</p>
                   </figcaption>
                 </figure>
-                <figure class="item-team text-center">
+                <figure class="item-team">
                   <img
                     width="90"
                     height="90"
@@ -578,9 +576,9 @@
                     data-src="img/testi3.jpg"
                     class="lazyloaded"
                   />
-                  <figcaption class="text-center">
-                    <span class="d-block">Катерина </span>
-                    <span>Digital Marketing Manager</span>
+                  <figcaption>
+                    <div class="text-white">Катерина</div>
+                    <p>Digital Marketing Manager</p>
                   </figcaption>
                 </figure>
               </div>
@@ -590,983 +588,592 @@
       </div>
     </section>
 
-    <section id="info" class="section-bg py-4 py-md-5">
+    <section id="info" class="section-bg-light section-for py-60">
       <div class="container">
         <div class="row">
-          <div class="col-md-10 m-auto text-center">
-            <h2 class="typing-text mb-4">Для кого?</h2>
-            <p class="pt-2 sub-text typing-text mb-4">
-              “If your business is not on the Internet, then your business will
-              be out of business.” — Bill Gates.
+          <div
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+            class="col-md-10 m-auto text-center"
+          >
+            <h2 class="mb-20">Для кого?</h2>
+            <p class="pre-text mb-44">
+              “Якщо ваш бізнес не в інтернеті, скоро вашого бізнесу не буде.” -
+              Білл Гейтс
             </p>
           </div>
         </div>
 
-        <div class="row">
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="col-md-6 d-flex mb-4 mb-sm-0"
-          >
-            <div class="item-card p-4">
-              <h3 class="h4">If you are just starting your online business</h3>
-              <p>
-                You don't have enough business experience, or you are starting a
-                new business and want to form a clear development
-                strategy.Together we can formulate simple and clear steps that
-                will lead you to the result!
-              </p>
-            </div>
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="col-md-6"
-          >
-            <div class="item-card p-4">
-              <h3 class="h4">
-                Already have a working store and want to improve results
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          class="row"
+        >
+          <div class="col-md-6 d-flex">
+            <div class="item-card p-32">
+              <h3 class="h4 pb-28">
+                Якщо ви тільки стартуєте ваш онлайн бізнес
               </h3>
               <p>
-                Stuck at a certain level and not growing for a while? Or are you
-                not satisfied with the growth rate? Together we will unpack the
-                best way to achieve multiple growth. You will get a clear action
-                plan and a team to implement it!
+                У вас недостатньо бізнес досвіду, або ви починаєте свою нову
+                справу і бажаєте сформувати чітку стратегію розвитку. Разом ми
+                зможемо сформувати прості і зрозумілі кроки, які приведуть вас
+                до результату
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item-card p-32">
+              <h3 class="h4 pb-28">
+                Вже маєте працюючий магазин і бажаєте покращити результати
+              </h3>
+              <p>
+                Застрягли на певному рівні і не зростаєте вже певний час? Або
+                вас не влаштовує темп зростання? Разом ми розпакуємо найкращий
+                шлях для досягнення кратного зростання. Ви отримаєте чіткий план
+                дій та команду для реалізації!
               </p>
             </div>
           </div>
         </div>
 
-        <div class="info-items mt-5">
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
-              xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
-              xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 100 100"
-              style="
-                enable-background: new 0 0 100 100;
-                max-width: 100%;
-                width: 65px;
-                height: 65px;
-              "
-              xml:space="preserve"
-              height="100%"
-            >
-              <switch fill="currentColor">
-                <foreignObject
-                  requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
-                  x="0"
-                  y="0"
-                  width="1"
-                  height="1"
-                  fill="currentColor"
-                ></foreignObject>
-                <g i:extraneous="self" fill="currentColor">
-                  <path
-                    d="M91.7,29.9h-5.5V7.3c0-2.6-2.2-4.8-4.8-4.8h-72c-2.6,0-4.8,2.2-4.8,4.8v65.3c0,2.6,2.2,4.8,4.8,4.8h52.9v16.5    c0,2,1.6,3.6,3.6,3.6h25.8c2,0,3.6-1.6,3.6-3.6V33.5C95.4,31.5,93.7,29.9,91.7,29.9z M17.8,8.2h63c0.8,0,1.4,0.6,1.4,1.4    c0,0.8-0.6,1.4-1.4,1.4h-63c-0.8,0-1.4-0.6-1.4-1.4C16.4,8.8,17,8.2,17.8,8.2z M12,7.2c1.3,0,2.4,1.1,2.4,2.4s-1.1,2.4-2.4,2.4    s-2.4-1.1-2.4-2.4C9.7,8.2,10.7,7.2,12,7.2z M9.4,73.2c-0.3,0-0.6-0.3-0.6-0.6V15.9H82v14H65.9c-2,0-3.6,1.6-3.6,3.6v39.7H9.4z     M78.8,95.9c-1.3,0-2.4-1.1-2.4-2.4c0-1.3,1.1-2.4,2.4-2.4c1.3,0,2.4,1.1,2.4,2.4C81.3,94.8,80.2,95.9,78.8,95.9z M93.1,88.9    c0,0.3-0.2,0.5-0.5,0.5H65.1c-0.3,0-0.5-0.2-0.5-0.5V38.5c0-0.3,0.2-0.5,0.5-0.5h27.5c0.3,0,0.5,0.2,0.5,0.5V88.9z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M89.2,71.6H68.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h20.5c0.5,0,0.9,0.4,0.9,0.9C90.2,71.2,89.8,71.6,89.2,71.6    z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M89.2,76.2H68.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h20.5c0.5,0,0.9,0.4,0.9,0.9C90.2,75.8,89.8,76.2,89.2,76.2    z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M89.2,80.9H68.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h20.5c0.5,0,0.9,0.4,0.9,0.9C90.2,80.5,89.8,80.9,89.2,80.9    z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M89.2,85.5H68.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h20.5c0.5,0,0.9,0.4,0.9,0.9C90.2,85.1,89.8,85.5,89.2,85.5    z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M71.8,53.9h8.4l1.6-4.8h-10V53.9z M80.7,55.3H71c-0.4,0-0.7-0.3-0.7-0.7v-6.2c0-0.4,0.3-0.7,0.7-0.7h11.7    c0.2,0,0.4,0.1,0.6,0.3c0.2,0.2,0.2,0.4,0.1,0.7l-2.1,6.2C81.3,55.1,81,55.3,80.7,55.3z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M89.2,45.6h-2.5c-0.3,0-0.6,0.2-0.7,0.5l-3.6,10.6H70c-0.4,0-0.7,0.3-0.7,0.7c0,0.4,0.3,0.7,0.7,0.7h1.6    c-0.2,0.2-0.2,0.5-0.2,0.9c0,2.2,3.2,2.2,3.2,0c0-0.3-0.1-0.7-0.2-0.9h4.2c-0.2,0.2-0.2,0.5-0.2,0.9c0,2.2,3.2,2.2,3.2,0    c0-0.3-0.1-0.7-0.2-0.9h1.8c0.3,0,0.6-0.2,0.7-0.5l3.6-10.6h2c0.4,0,0.7-0.3,0.7-0.7C89.9,46,89.5,45.6,89.2,45.6z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M89.2,67H68.8c-0.5,0-0.9-0.4-0.9-0.9c0-0.5,0.4-0.9,0.9-0.9h20.5c0.5,0,0.9,0.4,0.9,0.9C90.2,66.6,89.8,67,89.2,67z"
-                    fill="currentColor"
-                  ></path>
-                  <g fill="currentColor">
-                    <path
-                      d="M62.5,58.9H17.3c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3h45.2c0.7,0,1.3,0.6,1.3,1.3     C63.8,58.3,63.2,58.9,62.5,58.9z"
-                      fill="currentColor"
-                    ></path>
-                  </g>
-                  <g fill="currentColor">
-                    <path
-                      d="M62.5,64.8H17.3c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3h45.2c0.7,0,1.3,0.6,1.3,1.3     C63.8,64.3,63.2,64.8,62.5,64.8z"
-                      fill="currentColor"
-                    ></path>
-                  </g>
-                  <g fill="currentColor">
-                    <path
-                      d="M62.5,70.8H17.3c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3h45.2c0.7,0,1.3,0.6,1.3,1.3     C63.8,70.2,63.2,70.8,62.5,70.8z"
-                      fill="currentColor"
-                    ></path>
-                  </g>
-                  <path
-                    d="M32.3,37.5H48l3-9.1H32.3V37.5z M49,40.2H30.9c-0.8,0-1.4-0.6-1.4-1.4V27.1c0-0.8,0.6-1.4,1.4-1.4h21.9    c0.5,0,0.8,0.2,1.1,0.6c0.3,0.5,0.3,0.8,0.2,1.2l-3.9,11.7C50.1,39.9,49.5,40.2,49,40.2z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M64.9,22.1h-4.7c-0.6,0-1.1,0.3-1.2,0.9l-6.7,19.8H28.8c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4h3    c-0.3,0.5-0.5,0.9-0.5,1.7c0,4.1,5.9,4.1,5.9,0c0-0.6-0.2-1.2-0.5-1.7h7.8c-0.3,0.5-0.5,0.9-0.5,1.7c0,4.1,5.9,4.1,5.9,0    c0-0.6-0.2-1.2-0.5-1.7H53c0.6,0,1.1-0.3,1.2-0.9L61,24.9h3.7c0.8,0,1.4-0.6,1.4-1.4C66.2,22.7,65.5,22.1,64.9,22.1z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-              </switch>
-            </svg>
-
-            <h4 class="pt-3">E-commerce</h4>
-            <p class="pt-2">
-              Створення, просування та оптимізація інтернет магазинів.
-            </p>
-            <ul class="pt-3 ms-2">
-              <li>Фізичні товари</li>
-              <li>Цифрові товари</li>
-              <li>Послуги</li>
-            </ul>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          class="info-items mt-60"
+        >
+          <div class="info-item">
+            <img
+              alt="info"
+              src="img/info-item-img-1.png"
+              data-src="img/info-item-img-1.png"
+              class="lazyloaded"
+            />
+            <div class="info-item-content p-24">
+              <h3 class="h4 mb-8">E-commerce</h3>
+              <p class="mb-20">
+                Створення, просування та оптимізація інтернет магазинів.
+              </p>
+              <ul class="mb-0">
+                <li><div class="ps-8">Фізичні товари</div></li>
+                <li><div class="ps-8">Цифрові товари</div></li>
+                <li><div class="ps-8">Послуги</div></li>
+              </ul>
+            </div>
           </div>
 
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 100 100"
-              enable-background="new 0 0 100 100"
-              xml:space="preserve"
-              style="max-width: 100%; width: 65px; height: 65px"
-              height="100%"
-            >
-              <g display="none" style="" fill="currentColor">
-                <rect
-                  x="-1009.245"
-                  y="-34.243"
-                  display="inline"
-                  fill="currentColor"
-                  width="1329.133"
-                  height="1263.126"
-                  style=""
-                ></rect>
-              </g>
-              <g style="" fill="currentColor">
-                <g style="" fill="currentColor">
-                  <path
-                    fill="none"
-                    d="M33.982,52.204c0-4.475-3.64-8.115-8.115-8.115s-8.115,3.64-8.115,8.115s3.64,8.115,8.115,8.115    S33.982,56.679,33.982,52.204z"
-                    style=""
-                  ></path>
-                  <path
-                    fill="none"
-                    d="M79.925,52.465c0-4.475-3.641-8.115-8.115-8.115s-8.115,3.641-8.115,8.115s3.64,8.115,8.115,8.115    S79.925,56.94,79.925,52.465z"
-                    style=""
-                  ></path>
-                  <path
-                    fill="none"
-                    d="M48.843,52.281c5.476,0,9.931-4.455,9.931-9.931s-4.455-9.931-9.931-9.931s-9.931,4.455-9.931,9.931    S43.367,52.281,48.843,52.281z"
-                    style=""
-                  ></path>
-                  <path
-                    d="M36.912,42.35c0,4.688,2.711,8.734,6.645,10.684c-4.728,1.048-8.276,5.268-8.276,10.306v0.726    c-1.231-1.417-2.887-2.441-4.76-2.886c3.243-1.685,5.461-5.068,5.461-8.975c0-5.586-4.529-10.115-10.115-10.115    s-10.115,4.529-10.115,10.115c0,3.907,2.219,7.29,5.461,8.975c-4.001,0.954-6.99,4.555-6.99,8.849v21.179c0,0.552,0.447,1,1,1    s1-0.448,1-1v-0.994V70.028c0-3.917,3.182-7.104,7.093-7.104h5.098c3.271,0,6.066,2.23,6.866,5.316v3.019v23.126    c0,0.552,0.447,1,1,1c0.552,0,0.999-0.447,1-0.998c0-0.001,0-0.001,0-0.002V63.34c0-4.721,3.841-8.562,8.563-8.562h6.004    c4.715,0,8.551,3.841,8.551,8.562v31.086v0.002c0,0.552,0.447,1,1,1s1-0.448,1-1V71.52v-3.018    c0.801-3.089,3.596-5.318,6.866-5.318h5.097c3.911,0,7.093,3.187,7.093,7.104v20.185v0.995c0,0.552,0.447,1,1,1s1-0.448,1-1    v-21.18c0-4.294-2.988-7.894-6.989-8.848c3.243-1.685,5.462-5.068,5.462-8.975c0-5.586-4.529-10.115-10.115-10.115    c-5.586,0-10.115,4.529-10.115,10.115c0,3.907,2.219,7.29,5.462,8.975c-1.873,0.446-3.528,1.469-4.759,2.887V63.34    c0-5.038-3.545-9.258-8.268-10.306c3.934-1.951,6.645-5.996,6.645-10.684c0-6.589-5.342-11.931-11.931-11.931    C42.253,30.419,36.912,35.76,36.912,42.35z M25.867,60.319c-4.475,0-8.115-3.641-8.115-8.115s3.64-8.115,8.115-8.115    s8.115,3.64,8.115,8.115S30.341,60.319,25.867,60.319z M63.695,52.465c0-4.475,3.64-8.115,8.115-8.115s8.115,3.641,8.115,8.115    s-3.641,8.115-8.115,8.115S63.695,56.94,63.695,52.465z M48.843,32.419c5.476,0,9.931,4.455,9.931,9.931s-4.455,9.931-9.931,9.931    s-9.931-4.455-9.931-9.931S43.367,32.419,48.843,32.419z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M60.421,9.498c0.531,0,0.963-0.432,0.963-0.963V6.316c0-0.531-0.432-0.963-0.963-0.963s-0.964,0.432-0.964,0.963v2.218    C59.458,9.066,59.89,9.498,60.421,9.498z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M60.421,16.438c0.531,0,0.963-0.432,0.963-0.963v-2.218c0-0.531-0.432-0.963-0.963-0.963s-0.964,0.432-0.964,0.963v2.218    C59.458,16.006,59.89,16.438,60.421,16.438z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M62.782,11.859H65c0.531,0,0.963-0.432,0.963-0.963S65.532,9.932,65,9.932h-2.219c-0.531,0-0.963,0.432-0.963,0.963    S62.25,11.859,62.782,11.859z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M55.842,11.859h2.218c0.531,0,0.964-0.432,0.964-0.963s-0.433-0.963-0.964-0.963h-2.218c-0.531,0-0.964,0.432-0.964,0.963    S55.311,11.859,55.842,11.859z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M10.055,36.434c-0.183,0.182-0.283,0.424-0.283,0.681c0,0.257,0.101,0.5,0.283,0.682c0.375,0.376,0.987,0.375,1.362,0    l1.568-1.569c0.376-0.375,0.376-0.987,0-1.362c-0.182-0.182-0.424-0.282-0.681-0.282c-0.258,0-0.5,0.1-0.682,0.282L10.055,36.434z    "
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M6.51,42.704l1.568-1.569c0.375-0.376,0.375-0.987,0-1.362c-0.182-0.182-0.424-0.282-0.681-0.282    c-0.258,0-0.5,0.1-0.682,0.282l-1.568,1.568c-0.183,0.182-0.283,0.424-0.283,0.681c0,0.257,0.101,0.5,0.283,0.682    C5.523,43.079,6.135,43.081,6.51,42.704z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M12.986,42.704c0.375-0.375,0.375-0.987,0-1.363l-1.568-1.568c-0.182-0.182-0.424-0.282-0.681-0.282    c-0.258,0-0.5,0.1-0.682,0.282c-0.183,0.182-0.283,0.424-0.283,0.682c0.001,0.257,0.101,0.499,0.283,0.681l1.568,1.569    C11.999,43.081,12.611,43.08,12.986,42.704z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M6.716,37.797c0.362,0.364,0.998,0.365,1.362,0c0.375-0.375,0.375-0.987,0-1.363L6.51,34.866    c-0.188-0.188-0.435-0.282-0.682-0.282c-0.246,0-0.493,0.094-0.681,0.282c-0.375,0.375-0.375,0.987,0,1.363L6.716,37.797z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M13.518,10.714c0.531,0,0.963-0.432,0.963-0.963V7.533c0-0.531-0.432-0.964-0.963-0.964s-0.964,0.433-0.964,0.964V9.75    C12.554,10.282,12.987,10.714,13.518,10.714z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M13.518,17.654c0.531,0,0.963-0.432,0.963-0.963v-2.218c0-0.531-0.432-0.963-0.963-0.963s-0.964,0.432-0.964,0.963v2.218    C12.554,17.222,12.987,17.654,13.518,17.654z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M15.878,13.075h2.219c0.531,0,0.963-0.432,0.963-0.963s-0.432-0.963-0.963-0.963h-2.219c-0.531,0-0.963,0.432-0.963,0.963    S15.347,13.075,15.878,13.075z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M8.939,13.075h2.219c0.531,0,0.963-0.432,0.963-0.963s-0.432-0.963-0.963-0.963H8.939c-0.531,0-0.963,0.432-0.963,0.963    S8.408,13.075,8.939,13.075z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M95.135,5.572c0-0.552-0.447-1-1-1s-1,0.448-1,1c0,1.872-0.771,2.741-1.748,3.84c-1.056,1.189-2.252,2.536-2.252,5.168    c0,2.633,1.196,3.98,2.252,5.17c0.977,1.1,1.748,1.969,1.748,3.842c0,1.872-0.771,2.741-1.748,3.84    c-1.056,1.189-2.252,2.536-2.252,5.168c0,2.634,1.196,3.982,2.252,5.171c0.977,1.101,1.748,1.97,1.748,3.844    s-0.771,2.743-1.748,3.844c-1.056,1.189-2.252,2.538-2.252,5.171c0,0.552,0.447,1,1,1s1-0.448,1-1    c0-1.874,0.771-2.744,1.748-3.844c1.056-1.189,2.252-2.538,2.252-5.171s-1.196-3.981-2.252-5.171    c-0.977-1.101-1.748-1.97-1.748-3.844c0-1.872,0.771-2.741,1.748-3.84c1.056-1.189,2.252-2.536,2.252-5.168    c0-2.633-1.196-3.98-2.252-5.17c-0.977-1.1-1.748-1.969-1.748-3.842c0-1.872,0.771-2.741,1.748-3.84    C93.939,9.552,95.135,8.205,95.135,5.572z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M24.078,26.429c0.256,0,0.512-0.098,0.707-0.293c0.459-0.458,1.046-0.385,2.277-0.107    c1.267,0.284,2.848,0.641,4.131-0.645c1.284-1.284,0.929-2.862,0.644-4.13c-0.124-0.551-0.203-0.969-0.216-1.308    c-0.016-0.419,0.07-0.717,0.323-0.97c0.33-0.331,0.733-0.38,1.394-0.279c0.252,0.039,0.539,0.098,0.879,0.175    c1.268,0.285,2.844,0.641,4.128-0.641c1.145-1.145,0.984-2.522,0.733-3.706c-0.03-0.143-0.062-0.285-0.093-0.422    c-0.277-1.23-0.352-1.817,0.104-2.273c0.456-0.457,1.043-0.382,2.272-0.104c0.393,0.089,0.817,0.179,1.251,0.23    c0.968,0.114,1.992,0.015,2.877-0.87c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0c-0.456,0.456-1.045,0.381-2.272,0.104    c-1.267-0.286-2.846-0.642-4.128,0.64c-1.283,1.283-0.927,2.86-0.641,4.128c0.124,0.552,0.204,0.969,0.217,1.308    c0.016,0.417-0.07,0.713-0.322,0.965c-0.329,0.33-0.731,0.38-1.39,0.279c-0.254-0.039-0.542-0.098-0.884-0.175    c-1.269-0.287-2.847-0.642-4.128,0.641c-1.147,1.147-0.987,2.526-0.736,3.712c0.03,0.142,0.061,0.283,0.092,0.419    c0.277,1.232,0.351,1.819-0.106,2.277c-0.458,0.458-1.046,0.385-2.277,0.107c-0.392-0.088-0.816-0.177-1.25-0.228    c-0.968-0.113-1.994-0.014-2.881,0.873c-0.391,0.391-0.391,1.023,0,1.414C23.566,26.331,23.822,26.429,24.078,26.429z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M73.624,29.637c0.178-0.047,0.32-0.151,0.442-0.273c0.241-0.244,0.364-0.594,0.269-0.949    c-0.092-0.346-0.095-0.713-0.009-1.063c0.141-0.578,0.498-1.066,1.008-1.376c0.51-0.311,1.108-0.404,1.687-0.263    c0.581,0.142,1.07,0.502,1.381,1.021c0.307,0.504,0.398,1.098,0.258,1.673c-0.141,0.579-0.498,1.068-1.005,1.377    c-0.509,0.31-1.107,0.404-1.689,0.261c-0.351-0.085-0.694,0.04-0.933,0.279c-0.125,0.125-0.23,0.272-0.275,0.456    c-0.131,0.537,0.198,1.078,0.735,1.208c0.335,0.082,0.674,0.122,1.011,0.122c0.768,0,1.521-0.21,2.192-0.619    c0.963-0.587,1.641-1.515,1.907-2.611c0.267-1.094,0.092-2.225-0.488-3.18c-0.584-0.977-1.515-1.663-2.621-1.932    c-1.098-0.265-2.232-0.089-3.199,0.498c-0.966,0.588-1.645,1.516-1.911,2.611c-0.164,0.672-0.158,1.38,0.019,2.048    C72.542,29.46,73.091,29.776,73.624,29.637z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                </g>
-              </g>
-            </svg>
-            <h4 class="pt-3">Тури і івенти</h4>
-            <p class="pt-2">Просування групових івентів і туристичнів турів.</p>
-            <ul class="pt-3 ms-2">
-              <li>Локальні івенти</li>
-              <li>Мандрівки</li>
-              <li>Групові тури</li>
-            </ul>
+          <div class="info-item">
+            <img
+              alt="info"
+              src="img/info-item-img-2.png"
+              data-src="img/info-item-img-2.png"
+              class="lazyloaded"
+            />
+            <div class="info-item-content p-24">
+              <h3 class="h4 mb-8">Тури і івенти</h3>
+              <p class="mb-20">
+                Просування групових івентів і туристичнів турів.
+              </p>
+              <ul class="mb-0">
+                <li><div class="ps-8">Локальні івенти</div></li>
+                <li><div class="ps-8">Мандрівки</div></li>
+                <li><div class="ps-8">Групові тури</div></li>
+              </ul>
+            </div>
           </div>
 
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 100 100"
-              enable-background="new 0 0 100 100"
-              xml:space="preserve"
-              style="max-width: 100%; width: 65px; height: 65px"
-              height="100%"
-            >
-              <path
-                d="M37.7,44.3c-5,0-9.1,4.1-9.1,9.1c0,5,4.1,9.1,9.1,9.1c5,0,9.1-4.1,9.1-9.1C46.8,48.4,42.7,44.3,37.7,44.3z M37.7,57.5  c-2.3,0-4.1-1.9-4.1-4.1c0-2.3,1.9-4.1,4.1-4.1c2.3,0,4.1,1.9,4.1,4.1C41.8,55.7,39.9,57.5,37.7,57.5z M95.5,31.4L88,10.1  c-0.5-1.3-1.9-2-3.2-1.5L60.9,17c-0.6,0.2-1.1,0.7-1.4,1.3l-6.4,13.3c-4,1-7,2.2-9,3.8l-5-3.5c-0.9-0.6-2-0.6-2.9,0l-4.2,3v-3.2  c0-1.4-1.1-2.5-2.5-2.5h-7.7c-1.4,0-2.5,1.1-2.5,2.5v12.3L5.4,53.7C4.3,54.5,4,56,4.8,57.2c0.5,0.7,1.3,1,2,1c0.5,0,1-0.1,1.4-0.5  l1.1-0.8v32.1c0,1.4,1.1,2.5,2.5,2.5h51.5c1.4,0,2.5-1.1,2.5-2.5V56.9l1.1,0.8c1.1,0.8,2.7,0.5,3.5-0.6c0.8-1.1,0.5-2.7-0.6-3.5  L48.4,38.4c1.5-0.8,3.6-1.5,6.1-2.1l13.6,6.5c0.3,0.2,0.7,0.2,1.1,0.2c0.3,0,0.6,0,0.8-0.1L94,34.6c0.6-0.2,1.1-0.7,1.4-1.3  C95.7,32.7,95.7,32,95.5,31.4z M24.3,34.1H27v4.3l-2.8,2V34.1z M43,86.6H32.5V69.7H43V86.6z M60.9,86.6H48V67.2  c0-1.4-1.1-2.5-2.5-2.5H30c-1.4,0-2.5,1.1-2.5,2.5v19.4h-13V53.4l23.2-16.5l5,3.5c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0,0.2,0.1l18,12.8  V86.6z M69.4,37.9l-11.2-5.4l5.4-11.2l20.6-7.2L90,30.7L69.4,37.9z M64.4,30.3c0.3,0.9-0.2,1.8-1,2.2c-0.9,0.3-1.8-0.2-2.2-1  c-0.3-0.9,0.2-1.8,1-2.2C63.1,29,64.1,29.5,64.4,30.3z M79.7,31.2l0.2,0.5c0.2,0.6-0.1,1.4-0.8,1.6c-0.1,0-0.3,0.1-0.4,0.1  c-0.5,0-1-0.3-1.2-0.8L77.3,32c-0.4,0-0.8-0.1-1.2-0.2c-0.8-0.3-1.5-1-1.7-1.8c-0.2-0.6,0.1-1.4,0.8-1.6c0.7-0.2,1.4,0.1,1.6,0.8  c0.1,0.1,0.2,0.2,0.3,0.3c0.2,0.1,0.5,0.1,0.7,0c0.5-0.2,0.8-0.6,0.7-0.9l-0.2-0.7c-0.1-0.2-0.3-0.4-0.6-0.4l-2.4-0.4  c-1.2-0.2-2.2-1-2.5-2.1l-0.2-0.7c-0.4-1.2,0-2.6,1.1-3.4l-0.2-0.5c-0.2-0.6,0.1-1.4,0.8-1.6c0.7-0.2,1.4,0.1,1.6,0.8l0.2,0.5  c1.3,0,2.5,0.8,3,2c0.2,0.6-0.1,1.4-0.8,1.6c-0.7,0.2-1.4-0.1-1.6-0.8c-0.1-0.3-0.5-0.4-1-0.3c-0.5,0.2-0.8,0.6-0.7,0.9l0.2,0.7  c0.1,0.2,0.3,0.4,0.6,0.4l2.4,0.4c1.2,0.2,2.2,1,2.5,2.1l0.2,0.7C81.2,29,80.7,30.4,79.7,31.2z"
-                style=""
-                fill="currentColor"
-              ></path>
-            </svg>
-            <h4 class="pt-3">Нерухомість</h4>
-            <p class="pt-2">
-              Реклама для забудовників, агенцій і інвестиційних проектів.
-            </p>
-            <ul class="pt-3 ms-2">
-              <li>Закордонна нерухомість</li>
-              <li>Інвестиційна нерухомість</li>
-              <li>Індивідуальні проекти</li>
-            </ul>
+          <div class="info-item">
+            <img
+              alt="info"
+              src="img/info-item-img-3.png"
+              data-src="img/info-item-img-3.png"
+              class="lazyloaded"
+            />
+            <div class="info-item-content p-24">
+              <h3 class="h4 mb-8">Нерухомість</h3>
+              <p class="mb-20">
+                Реклама для забудовників, агенцій і інвестиційних проектів.
+              </p>
+              <ul class="mb-0">
+                <li><div class="ps-8">Закордонна нерухомість</div></li>
+                <li><div class="ps-8">Інвестиційна нерухомість</div></li>
+                <li><div class="ps-8">Індивідуальні проекти</div></li>
+              </ul>
+            </div>
           </div>
 
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
-              xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
-              xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="-255 347 100 100"
-              style="
-                enable-background: new -255 347 100 100;
-                max-width: 100%;
-                width: 65px;
-                height: 65px;
-              "
-              xml:space="preserve"
-              height="100%"
-            >
-              <switch style="" fill="currentColor">
-                <foreignObject
-                  requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
-                  x="0"
-                  y="0"
-                  width="1"
-                  height="1"
-                  style=""
-                  fill="currentColor"
-                ></foreignObject>
-                <g i:extraneous="self" style="" fill="currentColor">
-                  <path
-                    d="M-178.3,437.3v-25.1c6.5-6.3,10.2-14.9,10.2-24c0-18.4-14.9-33.3-33.3-33.3c-5,0-9.8,1.1-14.2,3.2    c-11.7,5.4-19.3,17.3-19.3,30.2v4.8l-6.2,11.8c-1.1,2.1-1.1,4.2-0.2,5.8c1,1.6,2.9,2.6,5.2,2.6h1.1v9.8c0,4.7,3.8,8.5,8.5,8.5    c0.1,0,0.2,0,0.3,0l6.9-1l0,7c0,1,0.8,1.9,1.9,1.9h37.2C-179.1,439.2-178.3,438.3-178.3,437.3z M-181.4,409.9    c-0.4,0.4-0.6,0.9-0.6,1.4v24.1h-33.4l0-7.3c0-0.5-0.2-1.1-0.7-1.4c-0.4-0.4-1-0.5-1.5-0.4l-8.9,1.3c-2.6-0.1-4.6-2.2-4.6-4.7    v-11.6c0-1-0.8-1.9-1.9-1.9h-3c-1,0-1.7-0.3-2-0.7c-0.3-0.5-0.2-1.2,0.3-2.1l6.4-12.2c0.1-0.3,0.2-0.6,0.2-0.9v-5.2    c0-11.4,6.7-21.9,17.1-26.8c4-1.9,8.2-2.8,12.6-2.8c16.3,0,29.6,13.3,29.6,29.6C-171.8,396.4-175.3,404.4-181.4,409.9z     M-188.7,380.9c0,2.7-0.9,5.3-2.5,7.5c-1.2,1.6-1.8,3.7-1.8,5.8c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9c0-2.9,0.9-5.8,2.6-8    c1.1-1.5,1.7-3.4,1.7-5.3c0-3.1-1.6-6-4.3-7.6c-2.8-1.7-6.2-1.7-9.3-0.1c-1.3,0.7-2.4,1.7-3,3c-1.8,3.5-1.6,7.1,0.4,10    c1.6,2.3,2.5,5.1,2.5,8c0,1-0.8,1.9-1.9,1.9c0,0,0,0,0,0c-1,0-1.9-0.8-1.9-1.9c0-2.2-0.6-4.2-1.8-5.8c-2.9-4-3.2-9.2-0.7-13.9    c1-2,2.6-3.5,4.6-4.6c4.4-2.2,9.1-2.1,13,0.3C-190.9,372.4-188.7,376.4-188.7,380.9z M-193.2,400.2c0,1-0.8,1.9-1.9,1.9h-13.1    c-1,0-1.9-0.8-1.9-1.9c0-1,0.8-1.9,1.9-1.9h13.1C-194,398.3-193.2,399.2-193.2,400.2z M-194.4,405.3c0,1-0.8,1.9-1.9,1.9h-10.6    c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9h10.6C-195.3,403.5-194.4,404.3-194.4,405.3z M-203.2,393.6v-8.1l-3.2-3    c-0.8-0.7-0.8-1.9-0.1-2.6c0.7-0.8,1.9-0.8,2.6-0.1l2.5,2.4l2.5-2.4c0.8-0.7,1.9-0.7,2.6,0.1c0.7,0.8,0.7,1.9-0.1,2.6l-3.2,3v8.2    c0,0.8-0.5,1.4-1.2,1.7c0,0,0,0,0,0c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.4,0c-0.1,0-0.2,0-0.4,0c-0.5-0.1-0.9-0.4-1.2-0.8    c0,0,0,0,0,0c-0.1-0.1-0.1-0.2-0.1-0.3c0,0,0-0.1,0-0.1c0-0.1-0.1-0.1-0.1-0.2C-203.2,393.9-203.2,393.8-203.2,393.6    C-203.2,393.6-203.2,393.6-203.2,393.6z"
-                    style=""
-                    fill="currentColor"
-                  ></path>
-                </g>
-              </switch>
-            </svg>
-            <h4 class="pt-3">Експерти</h4>
-            <p class="pt-2">
-              Робота з брендом та пошуком клієнтів для експертів.
-            </p>
-            <ul class="pt-3 ms-2">
-              <li>Психологи</li>
-              <li>Коучі</li>
-              <li>Спортивні тренери</li>
-            </ul>
+          <div class="info-item">
+            <img
+              alt="info"
+              src="img/info-item-img-4.png"
+              data-src="img/info-item-img-4.png"
+              class="lazyloaded"
+            />
+            <div class="info-item-content p-24">
+              <h3 class="h4 mb-8">Експерти</h3>
+              <p class="mb-20">
+                Робота з брендом та пошуком клієнтів для експертів.
+              </p>
+              <ul class="mb-0">
+                <li><div class="ps-8">Психологи</div></li>
+                <li><div class="ps-8">Коучі</div></li>
+                <li><div class="ps-8">Спортивні тренери</div></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="citate" class="py-4 py-md-5 bg-white">
+    <section class="py-60 bg-white">
       <div
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1200"
         class="container"
       >
-        <div class="logo-text text-decoration-none text-secondary mb-5">
-          CREW
-        </div>
-        <div class="container-author col-sm-10 m-auto text-center">
-          <div class="quote_container p-4">
-            <h2 class="quote">"З усіх утрат втрата часа найтяжча."</h2>
-            <div class="author">(Г.Сковорода)</div>
+        <div class="container-author col-sm-10 m-auto d-flex">
+          <div class="quote_container p-md-4">
+            <p class="logo-author mb-20">CREW</p>
+            <h2 class="quote">
+              "З усіх утрат втрата часа найтяжча." - (Г.Сковорода)
+            </h2>
           </div>
+          <img
+            class="author-img-citate d-flex mt-4 lazyloaded"
+            alt="author"
+            src="img/cartune-author.png"
+            data-src="img/cartune-author.png"
+          />
         </div>
-        <img class="autor-img-citate d-flex mt-4" src="img/cartune-autor.png" />
       </div>
     </section>
 
-    <section id="services" class="section-bg py-4 py-md-5">
+    <section id="services" class="section-bg-light py-60">
       <div class="container">
-        <h2 class="text-center typing-text">Які послуги ми надаємо</h2>
         <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          class="col-md-10 m-auto"
         >
-          <p class="h6">
+          <h2>Які послуги ми надаємо</h2>
+          <h3 class="mb-20 colorText">
             Будь-яка маркетингова послуга, яку ви тільки побажаєте - все за
             принципом єдиного вікна.
-          </p>
-          <p>
+          </h3>
+          <p class="pre-text">
             Ми з моєю командою надаємо повний супровід вашого онлайн-бізнесу. У
             вас лише ідея щось продавати або потрібно масштабування рекламних
             кампаній і збільшення клієнтської бази, ми допоможемо.
           </p>
-          <p>
+          <p class="pre-text">
             Data driven підхід та фокус на головних показниках бізнесу ROAS,
             MER, ROI
           </p>
         </div>
 
         <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          class="hr-with-text"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="900"
+          class="text-center"
         >
-          <span class="py-4 h6">Наші послуги</span>
+          <h6 class="pb-20 my-52 hr-with-text">Наші послуги</h6>
         </div>
 
-        <div class="services-items">
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 72 72"
-              enable-background="new 0 0 72 72"
-              xml:space="preserve"
-              style="max-width: 100%; width: 65px; height: 65px"
-              height="100%"
-            >
-              <g style="" fill="currentColor">
-                <g style="" fill="currentColor">
-                  <path
-                    fill="currentColor"
-                    d="M20.4,58c-7.8-6.1-7.3-16.6-7.3-16.7c0-0.6-0.2-1.3-0.6-1.8c-0.4-0.5-1-0.8-1.7-0.8c-0.1,0-0.1,0-0.2,0    c-1.3,0-2.3,1-2.4,2.3c0,0.5-0.7,13,9.2,20.8c0.4,0.3,1,0.5,1.5,0.5c0.7,0,1.4-0.3,1.9-0.9C21.6,60.4,21.5,58.8,20.4,58z"
-                    style=""
-                  ></path>
-                  <path
-                    fill="currentColor"
-                    d="M63.8,41c-0.1-1.3-1.1-2.3-2.4-2.3c-0.1,0-0.1,0-0.2,0c-0.6,0-1.2,0.3-1.7,0.8c-0.4,0.5-0.6,1.1-0.6,1.7    c0,0.1,0.4,10.6-7.3,16.7c-1,0.8-1.2,2.4-0.4,3.4c0.5,0.6,1.2,0.9,1.9,0.9c0.5,0,1.1-0.2,1.5-0.5C64.4,54.1,63.8,41.6,63.8,41z"
-                    style=""
-                  ></path>
-                </g>
-                <g style="" fill="currentColor">
-                  <ellipse
-                    fill="currentColor"
-                    cx="36"
-                    cy="45.5"
-                    rx="7.5"
-                    ry="8.5"
-                    style=""
-                  ></ellipse>
-                  <path
-                    fill="currentColor"
-                    d="M40.2,58.7l-3.4,3.4c-0.5,0.5-1.2,0.5-1.7,0l-3.4-3.4c-0.3-0.3-0.9-0.4-1.3-0.2c-4.8,2-8.2,6.5-8.6,11.9    c-0.1,0.6,0.4,1.2,1.1,1.2h26.2c0.6,0,1.1-0.5,1.1-1.2c-0.4-5.4-3.9-9.9-8.6-11.9C41.1,58.2,40.6,58.3,40.2,58.7z"
-                    style=""
-                  ></path>
-                </g>
-                <g style="" fill="currentColor">
-                  <ellipse
-                    fill="currentColor"
-                    cx="57.2"
-                    cy="9"
-                    rx="7.5"
-                    ry="8.5"
-                    style=""
-                  ></ellipse>
-                  <path
-                    fill="currentColor"
-                    d="M61.5,22.1l-3.4,3.4c-0.5,0.5-1.2,0.5-1.7,0L53,22.1c-0.3-0.3-0.9-0.4-1.3-0.2c-4.8,2-8.2,6.5-8.6,11.9    C43,34.4,43.5,35,44.1,35h26.2c0.6,0,1.1-0.5,1.1-1.2c-0.4-5.4-3.9-9.9-8.6-11.9C62.3,21.7,61.8,21.8,61.5,22.1z"
-                    style=""
-                  ></path>
-                </g>
-                <g style="" fill="currentColor">
-                  <ellipse
-                    fill="currentColor"
-                    cx="14.8"
-                    cy="9"
-                    rx="7.5"
-                    ry="8.5"
-                    style=""
-                  ></ellipse>
-                  <path
-                    fill="currentColor"
-                    d="M19,22.1l-3.4,3.4c-0.5,0.5-1.2,0.5-1.7,0l-3.4-3.4c-0.3-0.3-0.9-0.4-1.3-0.2c-4.8,2-8.2,6.5-8.6,11.9    C0.5,34.4,1,35,1.7,35h26.2c0.6,0,1.1-0.5,1.1-1.2c-0.4-5.4-3.9-9.9-8.6-11.9C19.9,21.7,19.3,21.8,19,22.1z"
-                    style=""
-                  ></path>
-                </g>
-              </g>
-            </svg>
-            <div class="h4 pt-3">Стратегія</div>
-            <ul class="pt-2 ms-2">
-              <li>Маркетинговий аудит</li>
-              <li>Дослідження ринку</li>
-              <li>Стратегія бренду</li>
-              <li>Створення CJM</li>
-              <li>Розробка маркетингової воронки</li>
-              <li>Контент-стратегія</li>
-              <li>Стратегія каналів збуту</li>
-              <li>Метрики</li>
-              <li>Таймлайни</li>
-              <li>Розподіл бюджету</li>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          class="services-items"
+        >
+          <div class="item-info">
+            <h3 class="h4 mb-20 d-flex align-items-center">
+              <img
+                data-src="img/info-icon-1.svg"
+                src="img/info-icon-1.svg"
+                alt="icon-services"
+                class="icon-info lazyloaded"
+              /><span class="title-info">Стратегія</span>
+            </h3>
+            <ul class="mb-0">
+              <li><div class="ps-8">Маркетинговий аудит</div></li>
+              <li><div class="ps-8">Дослідження ринку</div></li>
+              <li><div class="ps-8">Стратегія бренду</div></li>
+              <li><div class="ps-8">Створення CJM</div></li>
+              <li><div class="ps-8">Розробка маркетингової воронки</div></li>
+              <li><div class="ps-8">Контент-стратегія</div></li>
+              <li><div class="ps-8">Стратегія каналів збуту</div></li>
+              <li><div class="ps-8">Метрики</div></li>
+              <li><div class="ps-8">Таймлайни</div></li>
+              <li><div class="ps-8">Розподіл бюджету</div></li>
             </ul>
           </div>
 
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 500 500"
-              style="
-                enable-background: new 0 0 500 500;
-                max-width: 100%;
-                width: 65px;
-                height: 65px;
-              "
-              xml:space="preserve"
-              height="100%"
-            >
-              <title style="" fill="currentColor">
-                pinetree-branding-symbols-
-              </title>
-              <path
-                d="M39.2,30.4v440.4h421.5V30.4H39.2z M450.8,460.8H49.2V79.2h401.5V460.8z M450.8,69.2H49.2V40.4h401.5V69.2z"
-                style=""
-                fill="currentColor"
-              ></path>
-              <path
-                d="M76.9,44.6H56.3v20.7h20.7V44.6z M72.9,61.2H60.3V48.6h12.7V61.2z"
-                style=""
-                fill="currentColor"
-              ></path>
-              <path
-                d="M102.6,44.6H81.9v20.7h20.7V44.6z M98.6,61.2H85.9V48.6h12.7V61.2z"
-                style=""
-                fill="currentColor"
-              ></path>
-              <path
-                d="M128.2,44.6h-20.7v20.7h20.7V44.6z M124.2,61.2h-12.7V48.6h12.7L124.2,61.2z"
-                style=""
-                fill="currentColor"
-              ></path>
-              <polygon
-                points="265.1,431 265.1,427.9 115.1,427.9 115.1,431 115.1,434.2 265.1,434.2 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="265.1,410.3 265.1,407.2 115.1,407.2 115.1,410.3 115.1,413.5 265.1,413.5 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="265.1,389.7 265.1,386.5 115.1,386.5 115.1,389.7 115.1,392.8 265.1,392.8 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="265.1,369 265.1,365.9 115.1,365.9 115.1,369 115.1,372.2 265.1,372.2 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="265.1,348.4 265.1,345.2 115.1,345.2 115.1,348.4 115.1,351.5 265.1,351.5 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="385,263.2 385,260.1 115.1,260.1 115.1,263.2 115.1,266.4 385,266.4 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="385,242.5 385,239.4 115.1,239.4 115.1,242.5 115.1,245.7 385,245.7 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="385,283.9 385,280.7 115.1,280.7 115.1,283.9 115.1,287 385,287 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="385,304.6 385,301.4 115.1,301.4 115.1,304.6 115.1,307.7 385,307.7 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="385,325.2 385,322.1 115.1,322.1 115.1,325.2 115.1,328.4 385,328.4 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <path
-                d="M385,94.6H115.1v111.5H385V94.6z M378.7,199.8H121.4v-98.9h257.3V199.8z"
-                style=""
-                fill="currentColor"
-              ></path>
-              <path
-                d="M288.6,436.8H385v-94h-96.4V436.8z M294.9,349.1h83.8v81.3h-83.8V349.1z"
-                style=""
-                fill="currentColor"
-              ></path>
-              <polygon
-                points="360.8,160.5 360.8,157.3 256.9,157.3 256.9,163.6 360.8,163.6 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="360.8,139.8 360.8,136.6 256.9,136.6 256.9,143 360.8,143 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <polygon
-                points="360.8,119.1 360.8,116 256.9,116 256.9,122.3 360.8,122.3 "
-                style=""
-                fill="currentColor"
-              ></polygon>
-              <path
-                d="M151,177.7h11.5v7.3h6.3v-7.3h18.9v17.8h6.3v-17.8h11.3v7.3h6.3v-7.3h19.2L227,171h15l-33.6-61.1l-7.5,13.7l-10-18.2  L177,130.5l-11.3-20.6L132,171h22.7L151,177.7z M208.4,122.9l23,41.8h-7.9l-19.1-34.7L208.4,122.9z M180.6,137l10.3-18.7l6.4,11.7  l22.5,41l0.2,0.4h-58.4l0.2-0.4L180.6,137z M142.6,164.7l23-41.8l7.8,14.1l-15.3,27.7H142.6z"
-                style=""
-                fill="currentColor"
-              ></path>
-            </svg>
-            <div class="h4 pt-3">Розробка</div>
-            <ul class="pt-2 ms-2">
-              <li>Сайтів (WEB)</li>
-              <li>Мобільних додатків (Mobile)</li>
+          <div class="item-info">
+            <h3 class="h4 mb-20 d-flex align-items-center">
+              <img
+                data-src="img/info-icon-2.svg"
+                src="img/info-icon-2.svg"
+                alt="icon-services"
+                class="icon-info lazyloaded"
+              /><span class="title-info">Розробка</span>
+            </h3>
+            <ul class="mb-0">
+              <li><div class="ps-8">Сайтів (WEB)</div></li>
+              <li><div class="ps-8">Мобільних додатків (Mobile)</div></li>
             </ul>
           </div>
 
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              style="max-width: 100%; width: 65px; height: 65px"
-              height="100%"
-            >
-              <path
-                d="M500.1 429.8H299.14a10 10 0 0 0-10 10c0 9.18-7.48 16.66-16.66 16.66h-33.24a16.68 16.68 0 0 1-16.66-16.66 10 10 0 0 0-10-10H56.47V172.83A20.86 20.86 0 0 1 77.31 152h124.72l.09.87-20.78 19.61-.2.2a95.54 95.54 0 0 0-28.17 68v44.65a10 10 0 0 0 16.7 7.43l43.76-39.48a9.99 9.99 0 0 0 5.79 4.55 129.22 129.22 0 0 0 36.17 5.29h.45c12.4 0 24.71-1.78 36.61-5.3a9.98 9.98 0 0 0 5.9-4.75l43.98 39.7a10 10 0 0 0 16.7-7.43v-44.66c0-25.68-10-49.83-28.16-67.99l-19.22-19.22.19-1.47h122.85a20.86 20.86 0 0 1 20.84 20.83v183.35a10 10 0 0 0 20 0V172.84A40.88 40.88 0 0 0 434.69 132H314.15A166.13 166.13 0 0 0 271.54 7.54l-1.76-1.94A17.08 17.08 0 0 0 257.14 0H257a17.08 17.08 0 0 0-12.69 5.8l-3.31 3.76A166.83 166.83 0 0 0 200.02 132H77.32a40.88 40.88 0 0 0-40.84 40.83V429.8H11.9a10 10 0 0 0-10 10v15.59A56.68 56.68 0 0 0 58.52 512h394.96a56.68 56.68 0 0 0 56.61-56.61v-15.6a10 10 0 0 0-10-10zM303.7 216.46l4.78-37.87 8.25 8.24a75.66 75.66 0 0 1 22.3 53.86v22.16l-36.97-33.36 1.65-13.03zM256.03 22.77l1.15-1.3a146.17 146.17 0 0 1 36.33 116.1l-2.3 18.24v.02l-9.63 76.34-1.03 8.12a109.17 109.17 0 0 1-24.7 2.83h-.38c-8.14-.03-16.25-.97-24.17-2.8l-7.88-76.04-.89-8.55-2.2-21.21a146.75 146.75 0 0 1 35.7-111.75zm-45.98 206.62l-37.07 33.45v-22.16c0-20.3 7.89-39.38 22.2-53.75l9.54-9 5.33 51.46zM453.48 492H58.52a36.66 36.66 0 0 1-36.61-36.61v-5.6h182.07a36.73 36.73 0 0 0 35.27 26.67h33.23a36.73 36.73 0 0 0 35.28-26.66H490.1v5.59A36.65 36.65 0 0 1 453.48 492z"
-                style=""
-                fill="currentColor"
-              ></path>
-              <path
-                d="M424.85 174.32h-50.34a10 10 0 0 0 0 20h40.34v193.74H100.51V194.32h31.71a10 10 0 0 0 0-20H90.51a10 10 0 0 0-10 10v213.74a10 10 0 0 0 10 10h334.34a10 10 0 0 0 10-10V184.32a10 10 0 0 0-10-10z"
-                style=""
-                fill="currentColor"
-              ></path>
-              <circle
-                cx="256"
-                cy="105.57"
-                r="10"
-                style=""
-                fill="currentColor"
-              ></circle>
-              <circle
-                cx="465.53"
-                cy="399.77"
-                r="10"
-                style=""
-                fill="currentColor"
-              ></circle>
-              <path
-                d="M230 277.65a10 10 0 0 0-10 10v40.7a10 10 0 0 0 20 0v-40.7a10 10 0 0 0-10-10zM280.8 275.33a10 10 0 0 0-10 10v60.03a10 10 0 0 0 20 0v-60.03a10 10 0 0 0-10-10z"
-                style=""
-                fill="currentColor"
-              ></path>
-            </svg>
-            <div class="h4 pt-3">Дизайн та креатив</div>
-            <ul class="pt-2 ms-2">
-              <li>Брендинг та айдентика</li>
-              <li>UX та UI дизайн</li>
-              <li>Графічний дизайн</li>
-              <li>AR/3D дизайн</li>
-              <li>Motion дизайн</li>
-              <li>Відеопродакшн</li>
-              <li>Pitch Decks</li>
-              <li>Whitepapers</li>
+          <div class="item-info">
+            <h3 class="h4 mb-20 d-flex align-items-center">
+              <img
+                data-src="img/info-icon-3.svg"
+                src="img/info-icon-3.svg"
+                alt="icon-services"
+                class="icon-info lazyloaded"
+              /><span class="title-info">Дизайн та креатив</span>
+            </h3>
+            <ul class="mb-0">
+              <li><div class="ps-8">Брендинг та айдентика</div></li>
+              <li><div class="ps-8">UX та UI дизайн</div></li>
+              <li><div class="ps-8">Графічний дизайн</div></li>
+              <li><div class="ps-8">AR/3D дизайн</div></li>
+              <li><div class="ps-8">Motion дизайн</div></li>
+              <li><div class="ps-8">Відеопродакшн</div></li>
+              <li><div class="ps-8">Pitch Decks</div></li>
+              <li><div class="ps-8">Whitepapers</div></li>
             </ul>
           </div>
 
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 100 100"
-              x="0px"
-              y="0px"
-              style="max-width: 100%; width: 65px; height: 65px"
-              height="100%"
-            >
-              <title style="" fill="currentColor">Artboard 21</title>
-              <g style="" fill="currentColor">
-                <path
-                  d="M72,78H37.42l3.4-5.1,4.93.59h.12a1,1,0,0,0,.87-.51l4.62-8.15L56.65,68A1,1,0,0,0,58,67.75l8.53-12,.42,1.59a1,1,0,0,0,1,.75,1,1,0,0,0,1-1.25L68,53.41a1,1,0,0,0-1.21-.71,1,1,0,0,0-.26,0L62.91,53A1,1,0,0,0,63,55h.09l1.6-.15-7.81,11L51.52,62.6a1,1,0,0,0-1.39.36l-4.79,8.47-4.88-.59h-.14a1,1,0,0,0-.22,0,2.29,2.29,0,0,0-.34.16,1,1,0,0,0-.15.15.94.94,0,0,0-.1.1L37,75V41a1,1,0,0,0-2,0V78H33a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V80H72a1,1,0,0,0,0-2Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-                <path
-                  d="M76.41,10H25.59A5.6,5.6,0,0,0,20,15.59V84.41A5.6,5.6,0,0,0,25.59,90H76.41A5.6,5.6,0,0,0,82,84.41V15.59A5.6,5.6,0,0,0,76.41,10ZM80,84.41A3.6,3.6,0,0,1,76.41,88H25.59A3.6,3.6,0,0,1,22,84.41V15.59A3.6,3.6,0,0,1,25.59,12H76.41A3.6,3.6,0,0,1,80,15.59Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-                <path
-                  d="M27.19,57.58A3.44,3.44,0,1,0,30.63,61,3.44,3.44,0,0,0,27.19,57.58Zm0,4.88A1.44,1.44,0,1,1,28.63,61,1.44,1.44,0,0,1,27.19,62.45Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-                <path
-                  d="M27.19,35.55A3.44,3.44,0,1,0,30.63,39,3.44,3.44,0,0,0,27.19,35.55Zm0,4.88A1.44,1.44,0,1,1,28.63,39,1.44,1.44,0,0,1,27.19,40.42Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-                <path
-                  d="M72,20H36a1,1,0,0,0,0,2H72a1,1,0,0,0,0-2Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-                <path
-                  d="M36,26H68a1,1,0,0,0,0-2H36a1,1,0,0,0,0,2Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-                <path
-                  d="M36,30H63a1,1,0,0,0,0-2H36a1,1,0,0,0,0,2Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-                <path
-                  d="M36,34H68a1,1,0,0,0,0-2H36a1,1,0,0,0,0,2Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-              </g>
-            </svg>
-            <div class="h4 pt-3">Digital</div>
-            <ul class="pt-2 ms-2">
-              <li>Search Engine Optimization</li>
-              <li>Social Media Management</li>
-              <li>PR and Media</li>
-              <li>Influencer Marketing</li>
-              <li>Paid Search (Google, Bing)</li>
-              <li>Email Marketing</li>
+          <div class="item-info">
+            <h3 class="h4 mb-20 d-flex align-items-center">
+              <img
+                data-src="img/info-icon-4.svg"
+                src="img/info-icon-4.svg"
+                alt="icon-services"
+                class="icon-info lazyloaded"
+              /><span class="title-info">Digital</span>
+            </h3>
+            <ul class="mb-0">
+              <li><div class="ps-8">Search Engine Optimization</div></li>
+              <li><div class="ps-8">Social Media Management</div></li>
+              <li><div class="ps-8">PR and Media</div></li>
+              <li><div class="ps-8">Influencer Marketing</div></li>
+              <li><div class="ps-8">Paid Search (Google, Bing)</div></li>
+              <li><div class="ps-8">Email Marketing</div></li>
             </ul>
           </div>
 
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="info-item"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xmlns:serif="http://www.serif.com/"
-              viewBox="0 0 64 64"
-              version="1.1"
-              xml:space="preserve"
-              style="max-width: 100%; width: 65px; height: 65px"
-              x="0px"
-              y="0px"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              stroke-linejoin="round"
-              stroke-miterlimit="2"
-              height="100%"
-            >
-              <g style="" fill="currentColor">
-                <circle
-                  cx="56"
-                  cy="10"
-                  r="1"
-                  style=""
-                  fill="currentColor"
-                ></circle>
-                <circle
-                  cx="52"
-                  cy="10"
-                  r="1"
-                  style=""
-                  fill="currentColor"
-                ></circle>
-                <circle
-                  cx="48"
-                  cy="10"
-                  r="1"
-                  style=""
-                  fill="currentColor"
-                ></circle>
-                <path
-                  d="M52.014,20.239c-0.009,-0.078 -0.014,-0.158 -0.014,-0.239c0,-1.104 0.896,-2 2,-2c1.104,-0 2,0.896 2,2c0,1.104 -0.896,2 -2,2c-0.279,-0 -0.545,-0.057 -0.786,-0.161l-9.228,6.922c0.009,0.078 0.014,0.158 0.014,0.239c0,1.104 -0.896,2 -2,2c-1.064,0 -1.934,-0.832 -1.996,-1.88l-6.902,-3.451c-0.304,0.201 -0.665,0.321 -1.054,0.33l-4.341,7.959c0.186,0.304 0.293,0.661 0.293,1.042c-0,1.104 -0.896,2 -2,2c-1.064,0 -1.934,-0.832 -1.996,-1.88l-4.902,-2.451c-0.316,0.209 -0.695,0.331 -1.102,0.331c-0.138,0 -0.273,-0.014 -0.404,-0.041l-5.698,6.41c0.066,0.199 0.102,0.411 0.102,0.631c-0,1.104 -0.896,2 -2,2c-1.104,-0 -2,-0.896 -2,-2c0,-1.104 0.896,-2 2,-2c0.138,-0 0.273,0.014 0.404,0.041l5.698,-6.41c-0.066,-0.199 -0.102,-0.411 -0.102,-0.631c0,-1.104 0.896,-2 2,-2c1.064,0 1.934,0.832 1.996,1.88l4.902,2.451c0.304,-0.201 0.665,-0.321 1.054,-0.33l4.341,-7.959c-0.186,-0.304 -0.293,-0.661 -0.293,-1.042c0,-1.104 0.896,-2 2,-2c1.064,0 1.934,0.832 1.996,1.88l6.902,3.451c0.316,-0.209 0.695,-0.331 1.102,-0.331c0.279,0 0.545,0.057 0.786,0.161l9.228,-6.922Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-                <path
-                  d="M43.456,47c1.946,1.315 4.358,1.828 6.689,1.396l5.257,9.104c0.398,0.689 1.053,1.192 1.822,1.398c0.768,0.206 1.587,0.098 2.276,-0.3c0.689,-0.398 1.192,-1.053 1.398,-1.822c0.206,-0.768 0.098,-1.587 -0.3,-2.276l-4.33,-7.5l1.732,0c1.657,-0 3,-1.343 3,-3l-0,-36c-0,-1.657 -1.343,-3 -3,-3l-52,0c-1.657,0 -3,1.343 -3,3l-0,36c0,1.657 1.343,3 3,3l37.456,0Zm10.382,-0.208c-0.266,0.196 -0.545,0.379 -0.838,0.548c-0.293,0.169 -0.591,0.319 -0.894,0.452l5.028,8.708c0.133,0.23 0.351,0.397 0.607,0.466c0.256,0.069 0.529,0.033 0.759,-0.1c0.23,-0.133 0.397,-0.351 0.466,-0.607c0.069,-0.256 0.033,-0.529 -0.1,-0.759l-5.028,-8.708Zm-8.838,-13.309c3.346,-1.931 7.63,-0.783 9.562,2.563c1.932,3.345 0.784,7.63 -2.562,9.562c-3.346,1.931 -7.63,0.783 -9.562,-2.562c-1.932,-3.346 -0.784,-7.631 2.562,-9.563Zm14,-18.483l-54,0l0,29c0,0.552 0.448,1 1,1l35.34,0c-0.228,-0.301 -0.441,-0.619 -0.634,-0.954c-2.484,-4.302 -1.008,-9.811 3.294,-12.295c4.302,-2.483 9.811,-1.007 12.294,3.295c1.868,3.235 1.496,7.154 -0.633,9.954l2.339,-0c0.552,-0 1,-0.448 1,-1l-0,-29Zm-0,-2l-0,-5c-0,-0.552 -0.448,-1 -1,-1c-0,0 -52,0 -52,0c-0.552,0 -1,0.448 -1,1l0,5l54,0Z"
-                  style=""
-                  fill="currentColor"
-                ></path>
-              </g>
-            </svg>
-            <div class="h4 pt-3">Аналітика</div>
-            <ul class="pt-2 ms-2">
-              <li>End-to-end Analytics</li>
-              <li>Web Analytics</li>
-              <li>Mobile App Analytics</li>
+          <div class="item-info">
+            <h3 class="h4 mb-20 d-flex align-items-center">
+              <img
+                data-src="img/info-icon-5.svg"
+                src="img/info-icon-5.svg"
+                alt="icon-services"
+                class="icon-info lazyloaded"
+              /><span class="title-info">Аналітика</span>
+            </h3>
+            <ul class="mb-0">
+              <li><div class="ps-8">End-to-end Analytics</div></li>
+              <li><div class="ps-8">Web Analytics</div></li>
+              <li><div class="ps-8">Mobile App Analytics</div></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="slider" class="section-bg section-our-team py-4 py-md-5">
+    <section
+      id="slider"
+      class="section-our-team py-5 py-md-5 section-slider"
+      style="background-image: url('img/bg-slider.png')"
+    >
       <div class="container">
-        <h2 class="text-center typing-text">
+        <h2
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="900"
+          class="text-center col-md-10 mx-auto"
+        >
           За вашим брендом стоять перевірені архітектори розвитку
         </h2>
         <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          class="wrapper-slider"
+          class="position-relative"
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
         >
-          <div class="prev-btn"><span class="fa fa-angle-up"></span></div>
-          <div class="next-btn"><span class="fa fa-angle-down"></span></div>
-          <div class="nav-dots">
-            <div class="nav-dot" data-slide="1"></div>
-            <div class="nav-dot" data-slide="2"></div>
-            <div class="nav-dot" data-slide="3"></div>
-            <div class="nav-dot" data-slide="4"></div>
-            <div class="nav-dot" data-slide="5"></div>
-          </div>
-          <div class="panel" data-slide="1">
-            <div class="trans-layer" id="layer-1"></div>
-            <section class="section" id="section-1">
-              <div class="section-content">
-                <img
-                  class="gallery-img lazyloaded"
-                  alt="autor"
-                  data-src="img/Yuri-Ivanov-run-bw.png"
-                  src="img/Yuri-Ivanov-run-bw.png"
-                />
+          <div class="slider-container">
+            <div class="item active">
+              <div class="row align-items-center">
+                <div class="col-lg-7 d-flex">
+                  <img
+                    class="lazyloaded"
+                    alt="author"
+                    data-src="img/Yuri-Ivanov-run-bw.png"
+                    src="img/Yuri-Ivanov-run-bw.png"
+                  />
+                </div>
+                <div class="col-lg-5">
+                  <h3 class="mb-20">Lorem Ipsum 1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet justo
+                    sollicitudin morbi posuere. Nisl odio pellentesque sed in.
+                    Sed massa varius eu viverra feugiat sed aliquet pulvinar
+                    lobortis. Congue consectetur morbi malesuada a turpis
+                    mauris. Ullamcorper eget vulputate scelerisque netus risus
+                    aliquam egestas augue.
+                  </p>
+                  <div class="slider-items mt-40">
+                    <div>
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div>
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div>
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div>
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </section>
-          </div>
-          <div class="panel" data-slide="2">
-            <div class="trans-layer" id="layer-2"></div>
-            <section class="section" id="section-2">
-              <div class="section-content">
-                <img
-                  class="gallery-img lazyloaded"
-                  alt="autor"
-                  data-src="img/Yuri-Ivanov-run-bw.png"
-                  src="img/Yuri-Ivanov-run-bw.png"
-                />
+            </div>
+            <div class="item">
+              <div class="row align-items-center">
+                <div class="col-md-7 d-flex">
+                  <img
+                    class="lazyloaded"
+                    alt="author"
+                    data-src="img/Yuri-Ivanov-run-bw.png"
+                    src="img/Yuri-Ivanov-run-bw.png"
+                  />
+                </div>
+                <div class="col-md-5">
+                  <h3 class="mb-20">Lorem Ipsum 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet justo
+                    sollicitudin morbi posuere. Nisl odio pellentesque sed in.
+                    Sed massa varius eu viverra feugiat sed aliquet pulvinar
+                    lobortis. Congue consectetur morbi malesuada a turpis
+                    mauris. Ullamcorper eget vulputate scelerisque netus risus
+                    aliquam egestas augue.
+                  </p>
+                  <div class="slider-items mt-40">
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </section>
-          </div>
-          <div class="panel" data-slide="3">
-            <div class="trans-layer" id="layer-3"></div>
-            <section class="section" id="section-3">
-              <div class="section-content">
-                <img
-                  class="gallery-img lazyloaded"
-                  alt="autor"
-                  data-src="img/Yuri-Ivanov-run-bw.png"
-                  src="img/Yuri-Ivanov-run-bw.png"
-                />
+            </div>
+            <div class="item">
+              <div class="row align-items-center">
+                <div class="col-md-7 d-flex">
+                  <img
+                    class="lazyloaded"
+                    alt="author"
+                    data-src="img/Yuri-Ivanov-run-bw.png"
+                    src="img/Yuri-Ivanov-run-bw.png"
+                  />
+                </div>
+                <div class="col-md-5">
+                  <h3 class="mb-20">Lorem Ipsum 3</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet justo
+                    sollicitudin morbi posuere. Nisl odio pellentesque sed in.
+                    Sed massa varius eu viverra feugiat sed aliquet pulvinar
+                    lobortis. Congue consectetur morbi malesuada a turpis
+                    mauris. Ullamcorper eget vulputate scelerisque netus risus
+                    aliquam egestas augue.
+                  </p>
+                  <div class="slider-items mt-40">
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </section>
-          </div>
-          <div class="panel" data-slide="4">
-            <div class="trans-layer" id="layer-4"></div>
-            <section class="section" id="section-4">
-              <div class="section-content">
-                <img
-                  class="gallery-img lazyloaded"
-                  alt="autor"
-                  data-src="img/Yuri-Ivanov-run-bw.png"
-                  src="img/Yuri-Ivanov-run-bw.png"
-                />
+            </div>
+            <div class="item">
+              <div class="row align-items-center">
+                <div class="col-md-7 d-flex">
+                  <img
+                    class="lazyloaded"
+                    alt="author"
+                    data-src="img/Yuri-Ivanov-run-bw.png"
+                    src="img/Yuri-Ivanov-run-bw.png"
+                  />
+                </div>
+                <div class="col-md-5">
+                  <h3 class="mb-20">Lorem Ipsum 4</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet justo
+                    sollicitudin morbi posuere. Nisl odio pellentesque sed in.
+                    Sed massa varius eu viverra feugiat sed aliquet pulvinar
+                    lobortis. Congue consectetur morbi malesuada a turpis
+                    mauris. Ullamcorper eget vulputate scelerisque netus risus
+                    aliquam egestas augue.
+                  </p>
+                  <div class="slider-items mt-40">
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </section>
-          </div>
-          <div class="panel" data-slide="5">
-            <div class="trans-layer" id="layer-5"></div>
-            <section class="section" id="section-5">
-              <div class="section-content">
-                <img
-                  class="gallery-img lazyloaded"
-                  alt="autor"
-                  data-src="img/Yuri-Ivanov-run-bw.png"
-                  src="img/Yuri-Ivanov-run-bw.png"
-                />
+            </div>
+            <div class="item">
+              <div class="row align-items-center">
+                <div class="col-md-7 d-flex">
+                  <img
+                    class="lazyloaded"
+                    alt="author"
+                    data-src="img/Yuri-Ivanov-run-bw.png"
+                    src="img/Yuri-Ivanov-run-bw.png"
+                  />
+                </div>
+                <div class="col-md-5">
+                  <h3 class="mb-20">Lorem Ipsum 5</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Amet justo
+                    sollicitudin morbi posuere. Nisl odio pellentesque sed in.
+                    Sed massa varius eu viverra feugiat sed aliquet pulvinar
+                    lobortis. Congue consectetur morbi malesuada a turpis
+                    mauris. Ullamcorper eget vulputate scelerisque netus risus
+                    aliquam egestas augue.
+                  </p>
+                  <div class="slider-items mt-40">
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                    <div class="items">
+                      <div class="extrafs">100%</div>
+                      <p class="pre-text text-white">Lorem ipsum dolor</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </section>
+            </div>
+          </div>
+          <div class="button-container">
+            <button id="prev" class="button">
+              <img
+                class="lazyloaded"
+                alt="prev-icon"
+                data-src="img/prev.svg"
+                src="img/prev.svg"
+              />
+            </button>
+            <button id="next" class="button">
+              <img
+                class="lazyloaded"
+                alt="next-icon"
+                data-src="img/next.svg"
+                src="img/next.svg"
+              />
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="pricing" class="section-bg section-pricing-card py-4 py-md-5">
+    <section
+      id="pricing"
+      class="section-bg-light section-pricing-card py-5 py-md-5"
+    >
       <div class="container">
-        <h2 class="text-center typing-text">
+        <h2
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="900"
+          class="text-center col-md-10 mx-auto"
+        >
           Обирайте тарифний план, який підходить саме вам
         </h2>
-        <div class="row">
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="col-md-6 col-lg-4 mb-4 mb-xl-0"
-          >
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          class="row justify-content-center"
+        >
+          <div class="col-md-6 col-lg-4 mb-4 mb-xl-0">
             <article class="position-relative">
-              <hgroup class="top-text-gradient px-4 py-3 text-center">
-                <p>
-                  <span>₴900/mo</span>
+              <hgroup class="top-text-gradient text-center p-24">
+                <p class="text-uppercase text-white">
+                  <span>₴900/місяць</span>
                 </p>
                 <h2 class="text-uppercase">Start</h2>
               </hgroup>
               <main>
-                <ul class="my-4 list-unstyled text-center">
+                <ul class="my-4 list-unstyled text-center line-item">
                   <li>1GB of space</li>
                   <li>Unlimited traffic</li>
                   <li>Support at $25/hour</li>
                 </ul>
                 <a
                   href="#"
-                  class="pill text-gradient d-block text-center py-2 px-3 mx-auto text-uppercase"
-                  >Button</a
+                  class="pill text-gradient d-block text-center mx-auto"
+                  >Обрати план</a
                 >
               </main>
               <div class="waves position-absolute">
@@ -1585,31 +1192,24 @@
               </div>
             </article>
           </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="col-md-6 col-lg-4 mb-4 mb-xl-0"
-          >
+          <div class="col-md-6 col-lg-4 mb-4 mb-xl-0">
             <article class="position-relative">
-              <hgroup
-                class="top-text-gradient top-text-gradient2 px-4 py-3 text-center"
-              >
-                <p>
-                  <span>₴1800/mo</span>
+              <hgroup class="top-text-gradient text-center p-24">
+                <p class="text-uppercase text-white">
+                  <span>₴1.800/місяць</span>
                 </p>
                 <h2 class="text-uppercase">Mature</h2>
               </hgroup>
               <main>
-                <ul class="my-4 list-unstyled text-center">
+                <ul class="my-4 list-unstyled text-center line-item">
                   <li>5GB of space</li>
                   <li>Unlimited traffic</li>
                   <li>Support at $5/hour</li>
                 </ul>
                 <a
                   href="#"
-                  class="pill pill2 text-gradient text-gradient2 d-block text-center py-2 px-3 mx-auto text-uppercase"
-                  >Button</a
+                  class="pill text-gradient d-block text-center mx-auto"
+                  >Обрати план</a
                 >
               </main>
               <div class="waves position-absolute">
@@ -1628,31 +1228,24 @@
               </div>
             </article>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="col-md-6 col-lg-4"
-          >
+          <div class="col-md-6 col-lg-4">
             <article class="position-relative">
-              <hgroup
-                class="top-text-gradient top-text-gradient3 px-4 py-3 text-center"
-              >
-                <p>
-                  <span>₴2900/mo</span>
+              <hgroup class="top-text-gradient text-center p-24">
+                <p class="text-uppercase text-white">
+                  <span>₴2.900/місяць</span>
                 </p>
                 <h2 class="text-uppercase">Legendary</h2>
               </hgroup>
               <main>
-                <ul class="my-4 list-unstyled text-center">
+                <ul class="my-4 list-unstyled text-center line-item">
                   <li>20GB of space</li>
                   <li>Unlimited traffic</li>
                   <li>Free Support</li>
                 </ul>
                 <a
                   href="#"
-                  class="pill pill3 text-gradient text-gradient3 d-block text-center py-2 px-3 mx-auto text-uppercase"
-                  >Button</a
+                  class="pill text-gradient d-block text-center mx-auto"
+                  >Обрати план</a
                 >
               </main>
               <div class="waves position-absolute">
@@ -1675,104 +1268,185 @@
       </div>
     </section>
 
-    <section id="pricingTable" class="section-bg section-pricing py-4 py-md-5">
+    <section class="section-bg-light section-pricing py-5 py-md-5">
       <div class="container">
-        <h2 class="text-center typing-text">Порівняння тарифів</h2>
-        <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          class="pricing__table"
+        <h2
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="900"
+          class="text-center"
         >
-          <div class="pt__title">
-            <div class="pt__title__wrap">
-              <div class="pt__row"></div>
-              <div class="pt__row">Start</div>
-              <div class="pt__row">Mature</div>
-              <div class="pt__row">Legendary</div>
+          Порівняння тарифів
+        </h2>
+        <div
+          data-aos="fade-up"
+          data-aos-easing="linear"
+          data-aos-duration="1200"
+          class="pricing-table"
+        >
+          <div class="pt-title">
+            <div class="pt-title-wrap">
+              <div class="pt-row"></div>
+              <div class="h5 pt-row top-text-gradient">Start</div>
+              <div class="h5 pt-row top-text-gradient top-text-gradient2">
+                Mature
+              </div>
+              <div class="h5 pt-row top-text-gradient top-text-gradient3">
+                Legendary
+              </div>
             </div>
           </div>
-          <div class="pt__option">
-            <div class="pt__option__slider swiper" id="pricing-card-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide pt__option__item">
-                  <div class="pt__item">
-                    <div class="pt__item__wrap">
-                      <div class="pt__row">Monthly Pay</div>
-                      <div class="pt__row">900,000</div>
-                      <div class="pt__row">1800,000</div>
-                      <div class="pt__row">2900,000</div>
-                    </div>
-                  </div>
+          <div class="pt-option">
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Місячна оплата</div>
+                  <div class="pt-row">900 грн</div>
+                  <div class="pt-row">1.800 грн</div>
+                  <div class="pt-row">2.900 грн</div>
                 </div>
-                <div class="swiper-slide pt__option__item">
-                  <div class="pt__item">
-                    <div class="pt__item__wrap">
-                      <div class="pt__row">Users</div>
-                      <div class="pt__row">Unlimited</div>
-                      <div class="pt__row">5 Seats</div>
-                      <div class="pt__row">3 Seats</div>
-                    </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">
+                    Аудит поточної ситуації та регулярна аналітика
                   </div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
                 </div>
-                <div class="swiper-slide pt__option__item">
-                  <div class="pt__item">
-                    <div class="pt__item__wrap">
-                      <div class="pt__row">Audiences</div>
-                      <div class="pt__row">Unlimited</div>
-                      <div class="pt__row">5 Audiences</div>
-                      <div class="pt__row">3 Audiences</div>
-                    </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Стратегія розвитку бренду</div>
+                  <div class="pt-row pre-text">-</div>
+                  <div class="pt-row pre-text">-</div>
+                  <div class="pt-row pre-text icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Стратегія просування</div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Контент стратегія</div>
+                  <div class="pt-row pre-text">-</div>
+                  <div class="pt-row pre-text">-</div>
+                  <div class="pt-row pre-text icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">
+                    Щотижневий звіт про виконану роботу
                   </div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
                 </div>
-                <div class="swiper-slide pt__option__item">
-                  <div class="pt__item">
-                    <div class="pt__item__wrap">
-                      <div class="pt__row">24/7 Email & Chat Support</div>
-                      <div class="pt__row">Phone & Priority Support</div>
-                      <div class="pt__row">24/7 Email & Chat Support</div>
-                      <div class="pt__row">24/7 Email & Chat Support</div>
-                    </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Дашборд</div>
+                  <div class="pt-row pre-text">-</div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Канали просування</div>
+                  <div class="pt-row pre-text">1-2</div>
+                  <div class="pt-row pre-text">2</div>
+                  <div class="pt-row pre-text">4</div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Контент-менеджмент</div>
+                  <div class="pt-row pre-text">
+                    Можливість замовити додатково
                   </div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
                 </div>
-                <div class="swiper-slide pt__option__item">
-                  <div class="pt__item">
-                    <div class="pt__item__wrap">
-                      <div class="pt__row">Reporting & Analytics</div>
-                      <div class="pt__row">&#10003;</div>
-                      <div class="pt__row">&#10003;</div>
-                      <div class="pt__row">Limited</div>
-                    </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Покращення сайту</div>
+                  <div class="pt-row pre-text">
+                    Можливість замовити додатково
                   </div>
+                  <div class="pt-row pre-text icon"></div>
+                  <div class="pt-row pre-text icon"></div>
                 </div>
-                <div class="swiper-slide pt__option__item">
-                  <div class="pt__item">
-                    <div class="pt__item__wrap">
-                      <div class="pt__row">Forms & Landing Pages</div>
-                      <div class="pt__row">&#10003;</div>
-                      <div class="pt__row">&#10003;</div>
-                      <div class="pt__row">&#10003;</div>
-                    </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Розробка сайту</div>
+                  <div class="pt-row pre-text">
+                    Можливість замовити додатково
                   </div>
-                </div>
-                <div class="swiper-slide pt__option__item">
-                  <div class="pt__item">
-                    <div class="pt__item__wrap">
-                      <div class="pt__row">Creative Assistant</div>
-                      <div class="pt__row">&#10003;</div>
-                      <div class="pt__row">&#10003;</div>
-                      <div class="pt__row">Limited</div>
-                    </div>
+                  <div class="pt-row pre-text">
+                    Можливість замовити додатково
                   </div>
+                  <div class="pt-row pre-text icon"></div>
                 </div>
-                <div class="swiper-slide pt__option__item">
-                  <div class="pt__item selected">
-                    <div class="pt__item__wrap">
-                      <div class="pt__row">Get started</div>
-                      <div class="pt__row"><a href="#">Purchase Now</a></div>
-                      <div class="pt__row"><a href="#">Purchase Now</a></div>
-                      <div class="pt__row"><a href="#">Purchase Now</a></div>
-                    </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text">Оптимізація конверсії сайту</div>
+                  <div class="pt-row pre-text">-</div>
+                  <div class="pt-row pre-text">-</div>
+                  <div class="pt-row pre-text icon"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pt-option-item">
+              <div class="pt-item selected">
+                <div class="pt-item-wrap">
+                  <div class="pt-row pre-text"></div>
+                  <div class="pt-row">
+                    <a href="#" class="pill text-gradient"
+                      ><p>Обрати план</p></a
+                    >
+                  </div>
+                  <div class="pt-row">
+                    <a href="#" class="pill text-gradient"
+                      ><p>Обрати план</p></a
+                    >
+                  </div>
+                  <div class="pt-row">
+                    <a href="#" class="pill text-gradient"
+                      ><p>Обрати план</p></a
+                    >
                   </div>
                 </div>
               </div>
@@ -1782,19 +1456,19 @@
       </div>
     </section>
 
-    <section id="timeline" class="section-bg py-4 py-md-5">
-      <div class="container">
-        <h2 class="text-center typing-text">Щойно підписалися.</h2>
-        <h2 class="text-center typing-text">
-          Ось як ми приїдемо в пункт призначення.
+    <section id="timeline" class="section-bg py-60">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="900"
+        class="container"
+      >
+        <h2 class="text-center">
+          <div>Щойно підписалися.</div>
+          <div>Ось як ми приїдемо в пункт призначення.</div>
         </h2>
 
-        <div
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          class="timeline"
-        >
+        <div class="timeline">
           <div class="timeline-content">
             <span class="number">1</span>
             <div class="d-md-flex justify-content-md-between">
@@ -1882,43 +1556,31 @@
       </div>
     </section>
 
-    <section id="contact" class="section-bg pt-4 pt-md-5">
-      <div class="container">
-        <div class="row">
-          <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="col-lg-6"
-          >
-            <div class="p-4 m-3 item-container">
-              <h2 class="h2 mb-4">
-                Готові вивести свій маркетинг на новий рівень?
-              </h2>
-              <p class="pb-2">Зв'яжіться з нами щоб дізнатися:</p>
-              <ul class="mb-4">
-                <li>Як CREW допомагає досягати результатів</li>
-                <li>Як покращити маркетинг: ефективніше, швидше та дешевше</li>
-                <li>
-                  Чим ми крутіші за агенства, фрілансерів чи штатні команди
-                  (підказка: працюємо у 15 разів швидше, ніж встигають найняти!)
-                </li>
-                <li>Який тариф ідеально підходить саме для Вас</li>
-              </ul>
-            </div>
+    <section id="contact" class="section-contact pt-60 pt-md-120">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="900"
+        class="container"
+      >
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="h2">Готові вивести свій маркетинг на новий рівень?</h2>
+            <p class="pre-text pb-3">Зв'яжіться з нами щоб дізнатися:</p>
+            <ul class="mb-4 pre-text primaryText">
+              <li>Як CREW допомагає досягати результатів</li>
+              <li>Як покращити маркетинг: ефективніше, швидше та дешевше</li>
+              <li>
+                Чим ми крутіші за агенства, фрілансерів чи штатні команди
+                (підказка: працюємо у 15 разів швидше, ніж встигають найняти!)
+              </li>
+              <li>Який тариф ідеально підходить саме для Вас</li>
+            </ul>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
-            class="col-lg-6"
-          >
-            <div class="p-4 m-3 bg-block">
+          <div class="col-lg-6">
+            <div class="p-60 bg-block">
               <form action="#" method="post" class="text-md">
-                <div class="input-group mb-3">
-                  <span class="bg-block input-group-addon p-2"
-                    ><i class="fa fa-user" aria-hidden="true"></i
-                  ></span>
+                <div class="input-group input-gradient mb-24">
                   <input
                     type="text"
                     name="name"
@@ -1927,10 +1589,7 @@
                     required
                   />
                 </div>
-                <div class="input-group mb-3">
-                  <span class="bg-block input-group-addon p-2"
-                    ><i class="fa fa-phone" aria-hidden="true"></i
-                  ></span>
+                <div class="input-group input-gradient mb-24">
                   <input
                     type="tel"
                     name="phone"
@@ -1944,28 +1603,23 @@
                     data-has-listeners="true"
                   />
                 </div>
-                <div class="input-group mb-3">
-                  <span class="bg-block input-group-addon p-2"
-                    ><i class="fa fa-comments" aria-hidden="true"></i
-                  ></span>
-                  <input
-                    type="message"
+                <div class="input-group input-gradient">
+                  <textarea
+                    id="message"
                     name="message"
+                    rows="1"
                     class="input form-control bg-block text-white"
                     placeholder="Про що будемо говорити?"
                     required
-                  />
+                  ></textarea>
                 </div>
-                <!-- <textarea
-                  rows="6"
-                  name="message"
-                  class="input form-control bg-block text-white mb-3"
-                  placeholder="Про що будемо говорити"
-                  required
-                ></textarea> -->
                 <div class="text-end">
-                  <button type="submit" class="btn btn-primary">
-                    <span>Почати розмову</span>
+                  <button type="submit" class="btn mt-40">
+                    <a
+                      href="#"
+                      class="pill text-gradient d-block text-center mx-auto"
+                      >Почати розмову</a
+                    >
                   </button>
                 </div>
               </form>
@@ -1974,7 +1628,7 @@
         </div>
       </div>
       <footer class="relative bottom-0 left-0 w-full">
-        <div class="text-white py-4 text-center">
+        <div class="text-white mt-40 p-24 text-center">
           <span class="copyright"
             >@ Copyright
             <script>
@@ -2002,11 +1656,23 @@
     <!-- AOS Animation -->
     <script>
       AOS.init({
-        duration: 1000,
+        duration: 1200,
         easing: "ease-in-out",
         once: true,
         offset: 200,
       });
+    </script>
+    <!-- Autoheight textarea -->
+    <script>
+      const textarea = document.getElementById("message");
+
+      function autoResize() {
+        this.style.height = "auto";
+        this.style.height = this.scrollHeight + "px";
+      }
+
+      textarea.addEventListener("input", autoResize);
+      textarea.addEventListener("focus", autoResize);
     </script>
   </body>
 </html>

@@ -305,7 +305,6 @@ ol,
 ul {
   margin-top: 0;
   margin-bottom: 1rem;
-  padding-inline-start: 18px;
 }
 ol ol,
 ol ul,
@@ -718,7 +717,8 @@ progress {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1140px;
+    max-width: 1280px;
+    padding: 16px 40px;
   }
 }
 /* @media (min-width: 1400px) {
