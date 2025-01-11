@@ -429,7 +429,7 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .wrap-main-content {
     background-color: #000;
     background-image: none;
@@ -452,6 +452,7 @@ header {
 
   .auto-height {
     height: 50vh;
+    margin: auto;
   }
 }
 
@@ -822,7 +823,7 @@ header {
   color: #fff;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .main-content {
     left: 35%;
     border-radius: 50%;
@@ -842,7 +843,7 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .main-content {
     position: relative;
     transform: none;
@@ -910,7 +911,7 @@ header {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .circle1 {
     width: 300px;
     height: 300px;
