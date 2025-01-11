@@ -485,7 +485,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .bubble-speech {
-    right: -24%;
+    right: -27%;
     top: 65%;
     max-width: 220px;
   }
@@ -500,6 +500,12 @@ header {
     border: 20px solid;
     border-color: #4612a4 transparent transparent #4612a4;
     transform: rotate(100deg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bubble-speech {
+    right: -22%;
   }
 }
 
@@ -883,23 +889,23 @@ header {
 
 @media screen and (max-width: 1420px) {
   .circle1 {
-    width: 500px;
-    height: 500px;
+    width: 480px;
+    height: 480px;
     border: 3px solid #081c1e;
   }
 
   .circle2 {
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
   }
 
   .circle3 {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
 
   h1 {
-    font-size: 46px;
+    font-size: 44px;
   }
 }
 
