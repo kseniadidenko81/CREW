@@ -313,7 +313,7 @@ p + p {
   padding: 20px !important;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .p-32 {
     padding: 32px !important;
   }
