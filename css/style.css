@@ -411,6 +411,12 @@ header {
   max-width: 580px;
 }
 
+@media screen and (min-width: 1025px) {
+  .wrap-main-content {
+    background-position: 60% top;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .wrap-main-content {
     background-position-x: 65%;
