@@ -1,4 +1,4 @@
-// BURGER-MENU
+// BURGER-MENU AND MUNU
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 
@@ -39,6 +39,15 @@ function closeOnClickOutside(event) {
     closeNav();
   }
 }
+
+const menuItems = document.querySelectorAll(".navigation-right-item");
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    menuItems.forEach((el) => el.classList.remove("active"));
+    item.classList.add("active");
+  });
+});
 
 // STICKY
 const nav = document.querySelector(".navigation");
