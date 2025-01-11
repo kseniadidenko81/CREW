@@ -1660,6 +1660,7 @@ img.icon-info {
 .timeline {
   width: 100%;
 }
+
 .timeline-content {
   position: relative;
   padding: 0 0 32px 60px;
@@ -1667,6 +1668,11 @@ img.icon-info {
   transition: background 0.3s ease-in-out;
   cursor: auto;
 }
+
+.timeline-content:last-of-type {
+  padding: 0 0 0 60px;
+}
+
 .timeline-content p {
   margin-block-start: 0;
   margin-block-end: 0;
