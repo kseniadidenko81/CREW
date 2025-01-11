@@ -1375,6 +1375,7 @@ img.icon-info {
   background: transparent;
   width: 60px;
   height: 60px;
+  padding: 0;
 }
 
 .section-slider .button-container {
