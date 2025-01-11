@@ -1662,7 +1662,7 @@ img.icon-info {
 }
 .timeline-content {
   position: relative;
-  padding: 1rem 1rem 1rem 4rem;
+  padding: 0 0 32px 70px;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
   cursor: auto;
