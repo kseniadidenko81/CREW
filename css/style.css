@@ -928,6 +928,7 @@ header {
 
   h1 {
     font-size: 28px;
+    line-height: 38px;
     max-width: 60%;
   }
 }
