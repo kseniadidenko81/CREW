@@ -1662,7 +1662,7 @@ img.icon-info {
 }
 .timeline-content {
   position: relative;
-  padding: 0 0 32px 70px;
+  padding: 0 0 32px 60px;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
   cursor: auto;
@@ -1686,14 +1686,14 @@ img.icon-info {
   border-radius: 50%;
   background-color: #000079;
   border: 1px solid #fff;
-  left: 15px;
+  left: 4px;
   top: -4px;
 }
 
 @media screen and (min-width: 768px) {
   .timeline-content .number {
     width: 44px;
-    left: 10px;
+    left: 0;
   }
 }
 
@@ -1703,7 +1703,7 @@ img.icon-info {
   width: 2px;
   background-color: #fff;
   color: #fff;
-  left: calc(2rem - 0px);
+  left: calc(1.35rem - 0px);
   top: 2.1rem;
   bottom: 0.3rem;
   z-index: 1;
