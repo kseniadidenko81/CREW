@@ -1069,8 +1069,6 @@ header {
   .cards-w .card:last-of-type:after {
     width: 160px;
     height: 160px;
-    /* top: auto;
-    bottom: 0; */
     background-size: 160px;
   }
 
