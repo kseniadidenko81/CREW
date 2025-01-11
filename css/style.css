@@ -444,6 +444,10 @@ header {
   .mob-main-img {
     height: 370px;
   }
+
+  .link-mob {
+    margin-top: 60px;
+  }
 }
 
 .bubble-speech {
