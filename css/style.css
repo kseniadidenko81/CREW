@@ -1059,6 +1059,10 @@ header {
     height: 140px;
     background-size: 140px;
   }
+
+  .short-text {
+    max-width: 260px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1071,7 +1075,7 @@ header {
   }
 
   .short-text {
-    max-width: 260px;
+    max-width: 100%;
   }
 }
 
@@ -1080,10 +1084,6 @@ header {
     width: 180px;
     height: 180px;
     background-size: 180px;
-  }
-
-  .short-text {
-    max-width: auto;
   }
 }
 
