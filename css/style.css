@@ -177,6 +177,11 @@ ul {
   padding-inline-start: 22px;
 }
 
+a:focus-visible,
+a span:focus-visible {
+  outline: none;
+}
+
 p {
   font-size: 14px;
   line-height: 24px;
@@ -395,7 +400,7 @@ header {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background-image: url(../img/main-bg.png);
+  background-image: url(../img/main-bg1.png);
   background-repeat: no-repeat;
   background-position: 65% bottom;
   background-size: cover;
