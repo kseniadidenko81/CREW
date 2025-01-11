@@ -811,6 +811,13 @@ header {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .main-content {
+    left: 25%;
+    top: 55%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .main-content {
     position: relative;
