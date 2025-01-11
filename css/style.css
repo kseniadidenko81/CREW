@@ -424,7 +424,7 @@ header {
 
 @media screen and (max-width: 1024px) {
   .wrap-main-content {
-    background-position-x: 65%;
+    background-position-x: 75%;
   }
 }
 
@@ -817,8 +817,14 @@ header {
 
 @media screen and (min-width: 480px) {
   .main-content {
-    left: 30%;
+    left: 35%;
     border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content {
+    left: 25%;
   }
 }
 
