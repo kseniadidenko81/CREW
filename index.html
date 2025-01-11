@@ -74,11 +74,34 @@
           <div
             class="nav-width d-flex align-items-center justify-content-between"
           >
-            <div class="logo">
-              <a class="text-decoration-none" href="#"
-                ><span class="logo-text text-decoration-none">CREW</span></a
-              >
-            </div>
+            <nav class="d-flex justify-content-between w-100">
+              <div class="logo">
+                <a class="text-decoration-none" href="#"
+                  ><span class="logo-text text-decoration-none">CREW</span></a
+                >
+              </div>
+              <div class="navigation-right">
+                <a href="#why" onclick="navigateAndClose(event)"
+                  >Чому підписка
+                </a>
+                <a href="#about" onclick="navigateAndClose(event)">Команда </a>
+                <a href="#info" onclick="navigateAndClose(event)"
+                  >Пропозиції
+                </a>
+                <a href="#services" onclick="navigateAndClose(event)"
+                  >Послуги
+                </a>
+                <a href="#slider" onclick="navigateAndClose(event)">Кейси </a>
+                <a href="#pricing" onclick="navigateAndClose(event)">Тарифи </a>
+                <a href="#timeline" onclick="navigateAndClose(event)"
+                  >Процес
+                </a>
+                <a href="#contact" onclick="navigateAndClose(event)"
+                  >Контакти
+                  <!-- <span>»</span> -->
+                </a>
+              </div>
+            </nav>
 
             <div class="navbar-right nav_menu">
               <div id="mySidenav" class="sidenav">
@@ -140,114 +163,122 @@
             </div>
           </div>
         </div>
-        <div class="main-content">
-          <div class="auto-height">
-            <div class="circle circle1 position-relative animate element3">
-              <span class="bubble-speech pre-text animate2 element2 fade-in">
-                Всі ваші потреби з маркетингу в
-                <span class="color-text">одній</span> щомісячній підписці
-              </span>
-              <div class="circle circle2 animate element2">
-                <div class="circle circle3 d-flex flex-column animate element1">
-                  <div class="slogan-text">
-                    <h1>
-                      <span class="d-block">Віддалена</span
-                      ><span>маркетинг команда -</span>
-                    </h1>
-                    <p class="h4 p-1">
-                      <span>ефективне рішення для</span>
-                      <span>e-commerce бізнесу</span>
-                    </p>
+      </div>
+
+      <div class="wrap-main-content">
+        <div class="container">
+          <div class="main-content">
+            <div class="auto-height">
+              <div class="circle circle1 position-relative animate element3">
+                <span class="bubble-speech pre-text animate2 element2 fade-in">
+                  Всі ваші потреби з маркетингу в
+                  <span class="color-text">одній</span> щомісячній підписці
+                </span>
+                <div class="circle circle2 animate element2">
+                  <div
+                    class="circle circle3 d-flex flex-column animate element1"
+                  >
+                    <div class="slogan-text">
+                      <h1>
+                        <span class="d-block">Віддалена</span
+                        ><span>маркетинг команда -</span>
+                      </h1>
+                      <p class="h4 p-1">
+                        <span>ефективне рішення для</span>
+                        <span>e-commerce бізнесу</span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="mob-main-img"></div>
           </div>
-          <div class="mob-main-img"></div>
         </div>
-        <div class="chat-widget animate element2">
-          <button class="chat-button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              style=""
-            >
-              <path
-                d="M16 2C8.28 2 2 7.8 2 14.93a12.144 12.144 0 001.696 6.15l-1.668 7.51A1.16 1.16 0 003.63 29.9l6.914-3.072A14.835 14.835 0 0016 27.861c7.72 0 14-5.8 14-12.93S23.72 2 16 2zm4.508 16.32h-9.016a1.16 1.16 0 010-2.32h9.016a1.16 1.16 0 010 2.32zm0-4.638h-9.016a1.16 1.16 0 010-2.318h9.016a1.16 1.16 0 110 2.318z"
-                fill="currentColor"
-                fill-rule="nonzero"
-              ></path>
-            </svg>
-          </button>
-          <div class="chat-box">
-            <div class="chat-header">
-              <div class="d-flex flex-column text-start">
-                <div class="logo-chat">CREW</div>
-                <span class="reply"> We’ll reply as soon as we can</span>
-              </div>
+      </div>
 
-              <button class="close-chat">&times;</button>
+      <div class="chat-widget animate element2">
+        <button class="chat-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            style=""
+          >
+            <path
+              d="M16 2C8.28 2 2 7.8 2 14.93a12.144 12.144 0 001.696 6.15l-1.668 7.51A1.16 1.16 0 003.63 29.9l6.914-3.072A14.835 14.835 0 0016 27.861c7.72 0 14-5.8 14-12.93S23.72 2 16 2zm4.508 16.32h-9.016a1.16 1.16 0 010-2.32h9.016a1.16 1.16 0 010 2.32zm0-4.638h-9.016a1.16 1.16 0 010-2.318h9.016a1.16 1.16 0 110 2.318z"
+              fill="currentColor"
+              fill-rule="nonzero"
+            ></path>
+          </svg>
+        </button>
+        <div class="chat-box">
+          <div class="chat-header">
+            <div class="d-flex flex-column text-start">
+              <div class="logo-chat">CREW</div>
+              <span class="reply"> We’ll reply as soon as we can</span>
             </div>
-            <div class="chat-messages">
-              <!-- <div class="message bot-message">Hi! How can I help you?</div> -->
-            </div>
-            <div class="chat-input">
-              <input
-                type="text"
-                id="chat-input-field"
-                placeholder="Write your message..."
-              />
-              <input
-                type="file"
-                id="file-input"
-                class="file-input"
-                style="display: none"
-              />
-              <button id="upload-file-button">
-                <svg
-                  viewBox="0 0 9 23"
+
+            <button class="close-chat">&times;</button>
+          </div>
+          <div class="chat-messages">
+            <!-- <div class="message bot-message">Hi! How can I help you?</div> -->
+          </div>
+          <div class="chat-input">
+            <input
+              type="text"
+              id="chat-input-field"
+              placeholder="Write your message..."
+            />
+            <input
+              type="file"
+              id="file-input"
+              class="file-input"
+              style="display: none"
+            />
+            <button id="upload-file-button">
+              <svg
+                viewBox="0 0 9 23"
+                fill="currentColor"
+                width="7px"
+                height="17px"
+              >
+                <path
+                  d="M4.5,23A4.5,4.5,0,0,1,0,18.5V4.5a4.5,4.5,0,0,1,9,0H8a3.5,3.5,0,0,0-7,0v14a3.5,3.5,0,0,0,7,0v-9a1.5,1.5,0,0,0-3,0V17H4V9.5a2.5,2.5,0,0,1,5,0v9A4.5,4.5,0,0,1,4.5,23Z"
+                ></path>
+              </svg>
+            </button>
+            <button id="emoji-button">
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                width="16px"
+                height="16px"
+              >
+                <path
+                  d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm4.23-6.88a4.5,4.5,0,0,1-8.72,0l1-.25a3.5,3.5,0,0,0,6.78,0ZM8,8A1,1,0,1,1,7,7,1,1,0,0,1,8,8Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,14,8Z"
+                ></path>
+              </svg>
+            </button>
+            <button id="send-message">
+              <svg
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                width="16px"
+                height="16px"
+              >
+                <path
                   fill="currentColor"
-                  width="7px"
-                  height="17px"
-                >
-                  <path
-                    d="M4.5,23A4.5,4.5,0,0,1,0,18.5V4.5a4.5,4.5,0,0,1,9,0H8a3.5,3.5,0,0,0-7,0v14a3.5,3.5,0,0,0,7,0v-9a1.5,1.5,0,0,0-3,0V17H4V9.5a2.5,2.5,0,0,1,5,0v9A4.5,4.5,0,0,1,4.5,23Z"
-                  ></path>
-                </svg>
-              </button>
-              <button id="emoji-button">
-                <svg
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  width="16px"
-                  height="16px"
-                >
-                  <path
-                    d="M10,0a10,10,0,1,0,9.85,8.26A10,10,0,0,0,10,0Zm0,19A9,9,0,1,1,18.87,8.44,9.11,9.11,0,0,1,19,10,9,9,0,0,1,10,19Zm4.23-6.88a4.5,4.5,0,0,1-8.72,0l1-.25a3.5,3.5,0,0,0,6.78,0ZM8,8A1,1,0,1,1,7,7,1,1,0,0,1,8,8Zm6,0a1,1,0,1,1-1-1A1,1,0,0,1,14,8Z"
-                  ></path>
-                </svg>
-              </button>
-              <button id="send-message">
-                <svg
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  width="16px"
-                  height="16px"
-                >
-                  <path
-                    fill="currentColor"
-                    d="M1.40926391,5.29366938 L15.6697462,0.453934265 C16.3429879,0.239515621 16.9856276,0.882771554 16.7714144,1.55665872 L11.9363152,15.8308142 C11.722102,16.5047013 10.8040452,16.6272263 10.4062206,16.0146016 L7.34603122,11.3280226 L12.057229,5.36657191 C12.2102384,5.1827845 12.0266271,4.9989971 11.8430157,5.15215327 L5.87714034,9.91898584 L1.19505066,6.85586236 C0.613614686,6.42702507 0.705420366,5.53871926 1.40926391,5.29366938 Z"
-                    transform="rotate(-45 12.3 10.382)"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div class="emoji-picker" style="display: none">
-              😀 😃 😄 😁 😆 😅 😂 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😜 🤪
-              😝 🤑 🤗 🤭 🤫 🤔
-            </div>
+                  d="M1.40926391,5.29366938 L15.6697462,0.453934265 C16.3429879,0.239515621 16.9856276,0.882771554 16.7714144,1.55665872 L11.9363152,15.8308142 C11.722102,16.5047013 10.8040452,16.6272263 10.4062206,16.0146016 L7.34603122,11.3280226 L12.057229,5.36657191 C12.2102384,5.1827845 12.0266271,4.9989971 11.8430157,5.15215327 L5.87714034,9.91898584 L1.19505066,6.85586236 C0.613614686,6.42702507 0.705420366,5.53871926 1.40926391,5.29366938 Z"
+                  transform="rotate(-45 12.3 10.382)"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="emoji-picker" style="display: none">
+            😀 😃 😄 😁 😆 😅 😂 😊 😇 🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😜 🤪 😝
+            🤑 🤗 🤭 🤫 🤔
           </div>
         </div>
       </div>
