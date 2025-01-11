@@ -1412,6 +1412,10 @@ img.icon-info {
   }
 }
 
+.slider-container .item img {
+  max-height: 560px;
+}
+
 .button {
   display: inline-block;
   vertical-align: top;
