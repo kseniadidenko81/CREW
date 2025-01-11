@@ -71,7 +71,7 @@ h1 {
   font-weight: 600;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   h1 {
     font-size: 54px;
     line-height: 72px;
@@ -85,7 +85,7 @@ h1 {
   color: #01eafa;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .extrafs {
     font-size: 52px;
     line-height: 70px;
@@ -100,7 +100,7 @@ h2,
   margin-bottom: 40px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   h2,
   .h2 {
     font-size: 40px;
@@ -117,7 +117,7 @@ h3,
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   h3,
   .h3 {
     font-size: 32px;
@@ -133,7 +133,7 @@ h4,
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   h4,
   .h4 {
     font-size: 22px;
@@ -148,7 +148,7 @@ h5,
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   h5,
   .h5 {
     font-size: 18px;
@@ -163,7 +163,7 @@ h6,
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   h6,
   .h6 {
     font-size: 16px;
@@ -188,7 +188,7 @@ p + p {
   padding-top: 16px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   p {
     font-size: 16px;
     line-height: 26px;
@@ -201,7 +201,7 @@ p + p {
   font-weight: 400;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .pre-text {
     font-size: 18px;
     line-height: 28px;
@@ -227,21 +227,25 @@ p + p {
   padding: 60px 0 !important;
 }
 
-@media (min-width: 768px) {
-  .py-60 {
-    padding: 120px 0 !important;
-  }
-}
-
 .pt-60 {
   padding-top: 60px !important;
+}
+
+@media screen and (min-width: 992px) {
+  .pt-120 {
+    padding-top: 120px !important;
+  }
+
+  .pb-120 {
+    padding-bottom: 120px !important;
+  }
 }
 
 .mb-44 {
   margin-bottom: 40px !important;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .mb-44 {
     margin-bottom: 44px !important;
   }
@@ -255,7 +259,7 @@ p + p {
   margin-bottom: 12px !important;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .mb-20 {
     margin-bottom: 20px !important;
   }
@@ -269,7 +273,7 @@ p + p {
   margin-top: 24px !important;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .mt-60 {
     margin-top: 60px !important;
   }
@@ -279,7 +283,7 @@ p + p {
   margin: 40px 0 !important;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .my-52 {
     margin: 52px 0 !important;
   }
@@ -289,7 +293,7 @@ p + p {
   margin-top: 24px !important;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .mt-40 {
     margin-top: 40px !important;
   }
@@ -299,7 +303,7 @@ p + p {
   padding: 28px 20px !important;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .p-60 {
     padding: 60px !important;
   }
@@ -309,7 +313,7 @@ p + p {
   padding: 20px !important;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .p-32 {
     padding: 32px !important;
   }
@@ -319,7 +323,7 @@ p + p {
   padding: 20px !important;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .p-24 {
     padding: 24px !important;
   }
@@ -495,7 +499,7 @@ header {
   background: rgba(0, 0, 0, 0.5);
 }
 
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   .navigation.fixed-top {
     padding: 16px 40px;
   }
@@ -970,12 +974,6 @@ header {
   padding-top: 60px;
 }
 
-@media (min-width: 768px) {
-  .section-digital {
-    padding-top: 120px;
-  }
-}
-
 .cards {
   display: grid;
   gap: 24px;
@@ -991,7 +989,7 @@ header {
   flex: 1 1 100%;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .card {
     flex: 1 1 calc(33.33% - 24px);
   }
@@ -1034,7 +1032,7 @@ header {
   background-size: 100px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .cards-w .card:first-of-type:after {
     width: 135px;
     height: 135px;
@@ -1055,13 +1053,37 @@ header {
   background-size: 100px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .cards-w .card:last-of-type:after {
+    width: 140px;
+    height: 140px;
+    background-size: 140px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards-w .card:last-of-type:after {
+    width: 160px;
+    height: 160px;
+    top: auto;
+    bottom: 0;
+    background-size: 160px;
+  }
+
+  .short-text {
+    max-width: 260px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .cards-w .card:last-of-type:after {
     width: 180px;
     height: 180px;
-    top: auto;
-    bottom: 0;
     background-size: 180px;
+  }
+
+  .short-text {
+    max-width: auto;
   }
 }
 
@@ -1075,7 +1097,7 @@ header {
   padding-bottom: 60px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-why {
     padding-top: 60px;
     padding-bottom: 120px;
@@ -1118,7 +1140,7 @@ header {
   margin-bottom: 32px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-our-team h2 {
     margin-bottom: 44px;
   }
@@ -1144,7 +1166,7 @@ header {
   margin-top: 28px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .block-teams {
     margin-top: 44px;
   }
@@ -1178,7 +1200,7 @@ header {
   text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .section-our-team .col-lg-6 .about-me {
     border-radius: 2px 0 0 2px;
   }
@@ -1192,7 +1214,7 @@ header {
   padding-top: 40px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .plus-padding + .plus-padding {
     padding-top: 80px;
   }
@@ -1204,7 +1226,7 @@ header {
   gap: 24px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-for .row {
     gap: 0;
   }
@@ -1269,7 +1291,7 @@ header {
   gap: 28px;
 }
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .services-items {
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
@@ -1308,7 +1330,7 @@ img.icon-info {
   border-radius: 2px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hr-with-text::before,
   .hr-with-text::after {
     width: 40%;
@@ -1316,7 +1338,7 @@ img.icon-info {
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .hr-with-text::before,
   .hr-with-text::after {
     width: 42%;
@@ -1361,7 +1383,7 @@ img.icon-info {
   left: 8px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-slider .button-container {
     top: 16px;
     left: 16px;
@@ -1374,7 +1396,7 @@ img.icon-info {
   gap: 24px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .slider-items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1384,7 +1406,7 @@ img.icon-info {
   gap: 28px;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .slider-container .item .row {
     gap: 0;
   }
@@ -1412,7 +1434,6 @@ img.icon-info {
 .pricing-table {
   display: flex;
   flex-direction: column;
-  margin: 30px 30px 60px 30px;
 }
 
 .pricing-table .pt-title {
@@ -1503,7 +1524,7 @@ img.icon-info {
   border-bottom: 0;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .section-pricing {
     display: none;
   }
@@ -1664,7 +1685,7 @@ img.icon-info {
   top: 10px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .timeline-content .number {
     width: 44px;
     left: 10px;
@@ -1684,7 +1705,7 @@ img.icon-info {
   z-index: 1;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .timeline-img {
     max-width: 40%;
   }
@@ -1704,7 +1725,7 @@ img.icon-info {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .section-contact {
     background-image: radial-gradient(
       circle at center right,
@@ -1859,7 +1880,7 @@ button.btn {
   flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container-author {
     flex-wrap: nowrap;
   }
