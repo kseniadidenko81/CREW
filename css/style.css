@@ -1551,7 +1551,6 @@ img.icon-info {
 }
 
 .pricing-table .pt-title .pt-title-wrap {
-  position: relative;
   display: flex;
   background-color: #2326c2;
   color: #01eafa;
@@ -1566,6 +1565,7 @@ img.icon-info {
   text-align: center;
   width: 25%;
   padding: 15px;
+  margin: 0;
 }
 
 .pricing-table .pt-title .pt-title-wrap .pt-row:first-child {
