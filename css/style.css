@@ -662,7 +662,7 @@ header {
 
 @media screen and (min-width: 1280px) {
   .navigation.fixed-top {
-    padding: 30px 40px;
+    padding: 20px 40px;
   }
 
   .navigation-right {
