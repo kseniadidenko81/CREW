@@ -1550,46 +1550,30 @@ img.icon-info {
   flex-direction: column;
 }
 
-.pricing-table .pt-title {
-  display: flex;
-}
-
 .pricing-table .pt-title .pt-title-wrap {
   position: relative;
   display: flex;
-  flex: 1;
-  flex-direction: row;
-  font-size: 18px;
-  text-align: center;
   background-color: #2326c2;
   color: #01eafa;
 }
 
 .pricing-table .pt-title .pt-title-wrap .pt-row {
+  border-bottom: 1px solid rgb(73 72 74 / 20%);
   display: flex;
-  width: 25%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 15px;
-  min-height: 60px;
-  border-bottom: 1px solid rgb(73 72 74 / 20%);
+  width: 25%;
+  padding: 15px;
 }
 
-.pricing-table .pt-option {
-  position: relative;
-}
-
-.pricing-table .pt-option .pt-option-item {
-  width: 100%;
-  margin-right: 0;
+.pricing-table .pt-title .pt-title-wrap .pt-row:first-child {
+  width: 30%;
 }
 
 .pricing-table .pt-option .pt-option-item .pt-item .pt-item-wrap {
   display: flex;
-  flex-direction: row;
-  position: relative;
 }
 
 .pricing-table .pt-option .pt-option-item .pt-item .pt-row {
