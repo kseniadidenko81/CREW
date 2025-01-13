@@ -675,6 +675,7 @@ header {
     line-height: 26px;
     color: #fff;
     text-decoration: none;
+    text-shadow: 2px 1px 3px #272424;
     transition: background-color 0.3s, color 0.3s;
   }
 
