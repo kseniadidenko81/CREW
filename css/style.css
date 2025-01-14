@@ -1996,6 +1996,18 @@ button.btn {
   font-size: 24px;
 }
 
+.pill.text-gradient {
+  outline: none;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: transparent;
+}
+
 /* BACK TO TOP */
 .back-to-top-btn {
   position: fixed;
