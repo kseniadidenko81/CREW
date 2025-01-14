@@ -1,4 +1,4 @@
-// BURGER-MENU AND MUNU
+// BURGER-MENU AND MENU
 function openNav() {
   document.getElementById("mySidenav").style.width = "100%";
 
@@ -223,4 +223,48 @@ $(function () {
   $("#backToTopBtn").on("click", function () {
     $("html, body").animate({ scrollTop: 0 }, "smooth");
   });
+});
+
+// FORM Formspree
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        const confirmationMessage = document.getElementById("confirmation");
+
+        confirmationMessage.style.display = "block";
+
+        setTimeout(() => {
+          confirmationMessage.classList.add("visible");
+        }, 10);
+
+        form.reset();
+
+        setTimeout(() => {
+          confirmationMessage.classList.remove("visible");
+          confirmationMessage.classList.add("hidden");
+          setTimeout(() => {
+            confirmationMessage.style.display = "none";
+            confirmationMessage.classList.remove("hidden");
+          }, 2000);
+        }, 3000);
+      } else {
+        alert("Помилка! Спробуйте ще раз.");
+      }
+    })
+    .catch(() => {
+      alert("Помилка при відправленні форми.");
+    });
 });
