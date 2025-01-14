@@ -1975,6 +1975,27 @@ button.btn {
   background: linear-gradient(-50deg, #e81cff 0%, #40c9ff 100%);
 }
 
+.confirmation {
+  display: none;
+  color: #00eafa;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 5s ease;
+}
+
+#confirmation.visible {
+  opacity: 1;
+}
+
+#confirmation.hidden {
+  opacity: 0;
+}
+
+.confirmation span {
+  font-size: 24px;
+}
+
 /* BACK TO TOP */
 .back-to-top-btn {
   position: fixed;
