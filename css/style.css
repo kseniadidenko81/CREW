@@ -1631,6 +1631,9 @@ img.icon-info {
 /* SECTION PRICING CARD */
 
 .section-pricing-card article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow: hidden;
   isolation: isolate;
   border-width: 2px;
@@ -1644,12 +1647,13 @@ img.icon-info {
 }
 
 .section-pricing-card main {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  /* padding-top: 40px; */
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   position: relative;
   z-index: 2;
+  margin-top: auto;
 }
 
 .waves {
@@ -1667,6 +1671,10 @@ img.icon-info {
   inset: -30% -20% 0 -40%;
 }
 
+.section-pricing-card .row {
+  gap: 24px 0;
+}
+
 .top-text-gradient {
   background-color: #01eafa;
   -webkit-background-clip: text;
@@ -1674,6 +1682,10 @@ img.icon-info {
 
 .top-text-gradient .h2 {
   color: #01eafa;
+}
+
+.section-pricing-card .top-text-gradient .h2 {
+  margin-bottom: 0;
 }
 
 .pill {
@@ -1734,11 +1746,11 @@ img.icon-info {
 
 .line-item li {
   position: relative;
-  background: linear-gradient(to right, #00005c, #108891, #00005c);
+  /* background: linear-gradient(to right, #00005c, #108891, #00005c); */
   background-size: 100% 1px;
   background-position: bottom;
   background-repeat: no-repeat;
-  padding: 12px;
+  padding: 60px 0 0;
 }
 
 /* SECTION TIMELINE */
