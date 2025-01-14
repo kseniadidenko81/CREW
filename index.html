@@ -1728,11 +1728,17 @@
           </div>
           <div class="col-lg-6">
             <div class="p-60 bg-block">
-              <form action="#" method="post" class="text-md">
+              <form
+                action="https://formspree.io/f/mkggewgv"
+                method="POST"
+                id="contactForm"
+                class="text-md"
+              >
                 <div class="input-group input-gradient mb-24">
                   <input
                     type="text"
                     name="name"
+                    id="name"
                     class="input form-control bg-block text-white"
                     placeholder="Ваше ім'я"
                     required
@@ -1764,14 +1770,15 @@
                 </div>
                 <div class="text-end">
                   <button type="submit" class="btn mt-40">
-                    <a
-                      href="#"
-                      class="pill text-gradient d-block text-center mx-auto"
-                      >Почати розмову</a
-                    >
+                    <p class="pill text-gradient d-block text-center mx-auto">
+                      Почати розмову
+                    </p>
                   </button>
                 </div>
               </form>
+              <div id="confirmation" class="confirmation">
+                <span>&check;</span> Ваше повідомлення відправлене!
+              </div>
             </div>
           </div>
         </div>
