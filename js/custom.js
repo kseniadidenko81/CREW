@@ -259,7 +259,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
             confirmationMessage.style.display = "none";
             confirmationMessage.classList.remove("hidden");
           }, 2000);
-        }, 3000);
+        }, 5000);
       } else {
         alert("Помилка! Спробуйте ще раз.");
       }
